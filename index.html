@@ -6,12 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Bootstrap demo</title>
     <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
-    <link rel="import" href="header.html">
 </head>
 
 <body class="bg-body">
+    <div id="header"></div>
     <div class="container-fluid text-center">
-        <div class="row justify-content-center" style="height: 8-px;">
+        <div class="row justify-content-center" style="height: 50px;">
             <div class="col align-self-center">
                 <h1>ACOM PRTG Image Generator Tool</h1>
             </div>
@@ -20,23 +20,40 @@
             <div class="col-5 bg-info ">
                 <form>
                     <div class="mb-3">
-                      <label for="exampleInputEmail1" class="form-label">Email address</label>
-                      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                      <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                        <label for="ip" class="form-label">IP</label>
+                        <input type="text" class="form-control" id="ip">
                     </div>
                     <div class="mb-3">
-                      <label for="exampleInputPassword1" class="form-label">Password</label>
-                      <input type="password" class="form-control" id="exampleInputPassword1">
+                        <label for="port" class="form-label">port</label>
+                        <input type="text" class="form-control" id="port">
                     </div>
-                    <div class="mb-3 form-check">
-                      <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                      <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                    <div class="dropdown">
+                        <label for="">protocol</label>
+                        <br/>
+                        <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          https
+                        </button>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item">https</a></li>
+                          <li><a class="dropdown-item">http</a></li>
+                        </ul>
+                      </div>
+                    <div class="mb-3">
+                        <label for="username" class="form-label">username</label>
+                        <input type="text" class="form-control" id="username">
                     </div>
-                    <button type="submit" class="btn btn-primary">Submit</button>
-                  </form>
+                    <div class="mb-3">
+                        <label for="password" class="form-label">password</label>
+                        <input type="text" class="form-control" id="password">
+                    </div>
+                    <button type="submit" class="btn btn-primary" id="submit-btn">Submit</button>
+                </form>
             </div>
         </div>
     </div>
+
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/index.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
 </body>
 
