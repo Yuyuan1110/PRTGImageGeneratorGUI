@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fetch XML Data using jQuery</title>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("#fetchButton").click(function(){
+        var apiUrl = "http://125.227.161.91:8088/api/table.xml";
+        var requestData = {
+            content: "devices",
+            columns: "objid,name",
+            username: "acom",
+            password: "Aa1234567890"
+        };
+
+        $.ajax({
+            url: apiUrl,
+            type: "GET",
+            data: requestData,
+            dataType: "xml",
+            success: function(response){
+                // Handle XML response
+                console.log(response);
+                
+                // Example: Parse XML and extract data
+                $(response).find("device").each(function(){
+                    var objid = $(this).find("objid").text();
+                    var name = $(this).find("name").text();
+                    
+                    // Do something with objid and name
+                    console.log("Device ID: " + objid + ", Name: " + name);
+                });
+            },
+            error: function(xhr, status, error){
+                console.error("Error fetching data:", error);
+            }
+        });
+    });
+});
+</script>
+</head>
+<body>
+<button id="fetchButton">Fetch Data</button>
+</body>
+</html>

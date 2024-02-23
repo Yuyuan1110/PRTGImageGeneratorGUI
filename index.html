@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Bootstrap demo</title>
     <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="css/index.css" rel="stylesheet" type="text/css">
 </head>
 
 <body class="bg-body">
@@ -21,37 +22,42 @@
                 <form>
                     <div class="mb-3">
                         <label for="ip" class="form-label">IP</label>
+                        <label class="error-msg fs-6 ms-3" id="ip-error"></label>
                         <input type="text" class="form-control" id="ip">
                     </div>
                     <div class="mb-3">
                         <label for="port" class="form-label">port</label>
+                        <label class="error-msg fs-6 ms-3" id="port-error"></label>
                         <input type="text" class="form-control" id="port">
                     </div>
                     <div class="dropdown">
-                        <label for="">protocol</label>
-                        <br/>
-                        <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                          https
-                        </button>
-                        <ul class="dropdown-menu">
-                          <li><a class="dropdown-item">https</a></li>
-                          <li><a class="dropdown-item">http</a></li>
+                        <a>protocol</a>
+                        <br />
+                        <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                            aria-expanded="false" id="protocol">http</button>
+                        <ul class="dropdown-menu" id="dropdown-menu">
+                            <li><a class="dropdown-item">https</a></li>
+                            <li><a class="dropdown-item">http</a></li>
                         </ul>
-                      </div>
+                    </div>
                     <div class="mb-3">
                         <label for="username" class="form-label">username</label>
-                        <input type="text" class="form-control" id="username">
+                        <label class="error-msg fs-6 ms-3" id="username-error"></label>
+                        <input type="text" class="form-control" id="username" autocomplete="username">
                     </div>
                     <div class="mb-3">
                         <label for="password" class="form-label">password</label>
+                        <label class="error-msg fs-6 ms-3" id="password-error"></label>
                         <input type="text" class="form-control" id="password">
                     </div>
                     <button type="submit" class="btn btn-primary" id="submit-btn">Submit</button>
+                    <label class="error-msg fs-6 ms-3" id="connect-error"></label>
                 </form>
             </div>
         </div>
     </div>
 
+    <!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> -->
     <script src="js/jquery-3.7.1.min.js"></script>
     <script src="js/index.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
