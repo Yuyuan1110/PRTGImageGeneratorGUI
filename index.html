@@ -33,12 +33,17 @@
                     <div class="dropdown">
                         <a>protocol</a>
                         <br />
-                        <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                        <select name="protocol">
+                            <option value="" selected>--select protocol--</option>
+                            <option value="http">http</option>
+                            <option value="https">https</option>
+                        </select>
+                        <!-- <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
                             aria-expanded="false" id="protocol">http</button>
                         <ul class="dropdown-menu" id="dropdown-menu">
                             <li><a class="dropdown-item">https</a></li>
                             <li><a class="dropdown-item">http</a></li>
-                        </ul>
+                        </ul> -->
                     </div>
                     <div class="mb-3">
                         <label for="username" class="form-label">username</label>

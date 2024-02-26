@@ -4,31 +4,31 @@ $(document).ready(function () {
 });
 
 
-$('.dropdown-menu').click(function (event) {
-    if (event.target.classList.contains('dropdown-item')) {
-        document.querySelector('.dropdown-toggle').innerText = event.target.innerText;
-    }
-})
-
 
 $("#submit-btn").click(function (event) {
     event.preventDefault();
-    var url = $("#protocol").html() + "://" + $("#ip").val() + ":" + $("#port").val();
-    fetch(url, {
-        method: 'POST'
-    })
-        .then(response => {
-            if (!response.ok) {
-                throw new Error('Network response was not ok');
-            }
-            return response.text();
+    if (checkIP() && checkPORT() && checkProtocol() && checkPassword() && checkUsername()) {
+        var url = $('select[name="protocol"]').val(); + "://" + $("#ip").val() + ":" + $("#port").val();
+        fetch(url, {
+            method: 'POST'
         })
-        .then(data => {
-            console.log(data);
-        })
-        .catch(error => {
-            console.error('There was a problem with your fetch operation:', error);
-        });
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error('Network response was not ok');
+                }
+                return response.text();
+            })
+            .then(data => {
+                console.log(data);
+            })
+            .catch(error => {
+                console.error('There was a problem with your fetch operation:', error);
+            });
+        console.log("true");
+    } else {
+        console.log("false")
+    }
+
 })
 // submitBtn.addEventListener('click', (event) => {
 //     event.preventDefault();
@@ -110,6 +110,15 @@ function checkPORT() {
     }
 }
 
+function checkProtocol() {
+    var selectedValue = $('select[name="protocol"]').val();
+    if (selectedValue == "http" || selectedValue == "https") {
+        return true;
+    } else {
+        return false;
+    }
+}
+
 function checkUsername() {
     var username = $("#username").val();
     var reg_username = /^\w{4,20}$/;
@@ -149,10 +158,14 @@ function checkPassword() {
         return flag
     }
 }
-    $("#ip").blur(checkIP);
-    $("#port").blur(checkPORT);
-    $("#username").blur(checkUsername);
-    $("#password").blur(checkPassword);
+
+
+$("#ip").blur(checkIP);
+$("#port").blur(checkPORT);
+$("#username").blur(checkUsername);
+$("#password").blur(checkPassword);
+
+
 // function isValidIPv4(value) {
 //     var ipv4Regex = /^(?:[0-9]{1,3}\.){3}[0-9]{1,3}$/;
 //     if (!ipv4Regex.test(value)) {
