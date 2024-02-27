@@ -32,18 +32,13 @@
                     </div>
                     <div class="dropdown">
                         <a>protocol</a>
+                        <label class="error-msg fs-6 ms-3" id="protocol-error"></label>
                         <br />
                         <select name="protocol">
                             <option value="" selected>--select protocol--</option>
                             <option value="http">http</option>
                             <option value="https">https</option>
                         </select>
-                        <!-- <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
-                            aria-expanded="false" id="protocol">http</button>
-                        <ul class="dropdown-menu" id="dropdown-menu">
-                            <li><a class="dropdown-item">https</a></li>
-                            <li><a class="dropdown-item">http</a></li>
-                        </ul> -->
                     </div>
                     <div class="mb-3">
                         <label for="username" class="form-label">username</label>
@@ -55,8 +50,11 @@
                         <label class="error-msg fs-6 ms-3" id="password-error"></label>
                         <input type="text" class="form-control" id="password">
                     </div>
-                    <button type="submit" class="btn btn-primary" id="submit-btn">Submit</button>
+                    <button type="submit" class="btn btn-primary" id="submit-btn">Connect</button>
                     <label class="error-msg fs-6 ms-3" id="connect-error"></label>
+                    <div class="spinner-border spinner-border-sm text-danger" role="status">
+                        <span class="visually-hidden">Loading...</span>
+                      </div>
                 </form>
             </div>
         </div>
