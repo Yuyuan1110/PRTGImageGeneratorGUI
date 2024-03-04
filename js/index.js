@@ -1,8 +1,8 @@
 $(document).ready(function () {
     $("#header").load("header.html");
     document.getElementById("ip").focus();
-    $(".spinner-border").css("display","none");
-    
+    $(".spinner-border").css("display", "none");
+
 });
 
 var info = { ip: "", port: "", protocol: "", username: "", password: "" };
@@ -10,12 +10,18 @@ var info = { ip: "", port: "", protocol: "", username: "", password: "" };
 $("#submit-btn").click(function (event) {
     event.preventDefault();
     if (checkIP() && checkPORT() && checkProtocol() && checkPassword() && checkUsername()) {
-        $(".spinner-border").css("display","");
+        $(".spinner-border").css("display", "");
         $("#submit-btn").prop("disabled", true);
         $("#connect-error").text('Connecting to server...')
         var url = info.protocol + "://" + info.ip + ":" + info.port + "/api/table.json";
-        var requestData = {
+        var groupsRequestData = {
             content: "groups",
+            columns: "objid,name,parentid",
+            username: info.username,
+            password: info.password
+        }
+        var probeNodesRequestData = {
+            content: "probenodes",
             columns: "objid,name,parentid",
             username: info.username,
             password: info.password
@@ -23,34 +29,54 @@ $("#submit-btn").click(function (event) {
         $.ajax({
             url: url,
             type: "GET",
-            data: requestData,
+            data: groupsRequestData,
             dataType: "json",
             success: function (response) {
-                $(".spinner-border").css("display","none");
+                $(".spinner-border").css("display", "none");
                 $("#connect-error").text("forwarding to next page.");
                 $("#connect-error").css("color", "green");
                 sessionStorage.setItem("info", JSON.stringify(info));
-                console.log(response.groups);
+                // console.log(response.groups);
                 sessionStorage.setItem("groups", JSON.stringify(response.groups));
-                location.href = "groups.html"
+                // location.href = "groups.html"
             },
             error: function (xhr, status, error) {
                 // console.error("Error fetching data:", error);
                 switch (xhr.status) {
                     case 401:
-                        $(".spinner-border").css("display","none");
+                        $(".spinner-border").css("display", "none");
                         $("#connect-error").text("Unauthorized.")
                         break;
                     case 500:
-                        $(".spinner-border").css("display","none");
+                        $(".spinner-border").css("display", "none");
                         $("#connect-error").text("Internal server error.")
                         break;
                     default:
-                        $(".spinner-border").css("display","none");
+                        $(".spinner-border").css("display", "none");
                         $("#connect-error").text("Can't connected to server, please try again.")
                         break;
                 }
                 $("#submit-btn").prop("disabled", false);
+            }
+        });
+
+        $.ajax({
+            url: url,
+            type: "GET",
+            data: probeNodesRequestData,
+            dataType: "json",
+            success: function (response) {
+                // $(".spinner-border").css("display", "none");
+                // $("#connect-error").text("forwarding to next page.");
+                // $("#connect-error").css("color", "green");
+                // sessionStorage.setItem("info", JSON.stringify(info));
+                console.log(response.probenodes.filter(function (item) {
+                    return item.parentid === 0;
+                }));
+                sessionStorage.setItem("probenodes", JSON.stringify(response.probenodes.filter(function (item) {
+                    return item.parentid === 0;
+                })));
+                location.href = "groups.html";
             }
         });
     } else {
@@ -73,6 +99,7 @@ $("#submit-btn").click(function (event) {
         }
     }
 });
+
 
 function checkIP() {
     var ip = $("#ip").val();
