@@ -4,11 +4,10 @@ $(document).ready(function () {
     treeFunction();
 });
 
-
 var info = JSON.parse(sessionStorage.getItem('info'));
 var groups = JSON.parse(sessionStorage.getItem('groups'));
 var probenodes = JSON.parse(sessionStorage.getItem('probenodes'));
-console.log(groups);
+var merged = probenodes.concat(groups);
 
 
 function treeFunction() {
@@ -18,45 +17,30 @@ function treeFunction() {
     });
 }
 
-function sortProbeodes(probenodes) {
-    var sorted = Object.values(probenodes);
-    sorted.sort(function (a, b) {
-        a.parentid.localeCompare(b.parentid);
-    });
-    sorted.map(function (item) {
-        return { name: item.name, age: item.age };
-    });
-
-}
-var tree = buildTree(groups, probenodes);
-function buildTree(groups, probenodes) {
+var tree = buildTree(merged, -1000);
+function buildTree(merged, parentid) {
     var tree = [];
-    probenodes.forEach(function (probe) {
-        groups.forEach(function (item) {
-            if (item.parentid === probe.objid) {
-                var children = buildTree(groups, [item]);
-                if (children.length > 0) {
-                    item.children = children;
-                }
-                tree.push(item);
+    merged.forEach(function (item) {
+        if (item.parentid === parentid) {
+            var children = buildTree(merged, item.objid);
+            if (children.length > 0) {
+                item.children = children;
             }
-        });
+            tree.push(item);
+        }
     });
-
     return tree;
 }
-
-
 
 function buildHtml(tree) {
     var html = '<ul>';
     tree.forEach(function (item) {
         html += '<li>';
         if (item.children) {
-            html += '<span class="toggle"></span><label>' + item.name + '</label>';
+            html += '<span class="toggle"></span><a href="devices.html?groupid=' + encodeURIComponent(item.objid) + '">' + item.name + '</a>';
             html += buildHtml(item.children);
         } else {
-            html += item.name;
+            html += '<a href="devices.html?groupid=' + encodeURIComponent(item.objid) + '">' + item.name + '</a>';
         }
         html += '</li>';
     });

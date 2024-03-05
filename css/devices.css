@@ -1,0 +1,32 @@
+ul {
+    list-style-type: none;
+}
+
+.toggle::before {
+    content: "\25B6";
+    color: black;
+    display: inline-block;
+    margin-right: 6px;
+}
+
+.toggle-down::before {
+    transform: rotate(90deg);
+}
+
+li {
+    margin: 10px 0;
+}
+
+li ul {
+    margin-left: 20px;
+    display: none;
+}
+
+li.open ul {
+    display: block;
+}
+
+li .toggle {
+    cursor: pointer;
+    color: blue;
+}
