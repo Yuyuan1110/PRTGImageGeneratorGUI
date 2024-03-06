@@ -2,16 +2,16 @@ ul {
     list-style-type: none;
 }
 
-.toggle::before {
-    content: "\25B6";
-    color: black;
-    display: inline-block;
+.toggle {
+    /* content: "\25B6";
+    color: blue;
+    display: inline-block; */
     margin-right: 6px;
 }
-
+/* 
 .toggle-down::before {
     transform: rotate(90deg);
-}
+} */
 
 li {
     margin: 10px 0;
