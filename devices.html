@@ -7,6 +7,9 @@
     <title>Bootstrap demo</title>
     <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
     <link href="css/devices.css" rel="stylesheet" type="text/css">
+    <link href="css/jquery-ui.min.css" rel="stylesheet" type="text/css">
+    <link href="css/jquery.timepicker.css" rel="stylesheet" type="text/css">
+    <link href="css/jquery-ui-timepicker-addon.min.css" rel="stylesheet" type="text/css">
 </head>
 
 <body>
@@ -20,15 +23,49 @@
     </div>
     <div class="container-fluid">
         <div class="row justify-content-center" id="devices">
-            <div class="col-3">沒東西的話F5一下....</div>
+            <div class="col-3">Waiting...</div>
         </div>
         <div class="row justify-content-center">
-            <
+            <div class="row">
+                <div class='col-3'>
+                    <label>Start time:</label>
+                    <input type="text" class="datatimepicker" id="start" />
+                </div>
+                <div class='col-3'>
+                    <label>End time:</label>
+                    <input type="text" class="datatimepicker" id="end" />
+                </div>
+                <div class='col-4'>
+                    <label>Averaging Interval:</label>
+                    <select name="avg" id="avg" class="valid" aria-invalid="false">
+                        <option value="0">No interval (display raw data)</option>
+                        <option value="15">15 seconds</option>
+                        <option value="30">30 seconds</option>
+                        <option value="60">60 seconds/1 minute</option>
+                        <option value="120">2 minutes</option>
+                        <option value="300">5 minutes</option>
+                        <option value="600">10 minutes</option>
+                        <option value="900">15 minutes</option>
+                        <option value="1200">20 minutes</option>
+                        <option value="3600" selected="selected">60 minutes/1 hour</option>
+                        <option value="7200">2 hours</option>
+                        <option value="14400">4 hours</option>
+                        <option value="21600">6 hours</option>
+                        <option value="43200">12 hours</option>
+                        <option value="86400">24 hours/1 day</option>
+                    </select>
+                </div>
+                <div class="col-2">
+                    <button type="submit" class="btn btn-primary" id="submit-btn">submit</button>
+                </div>
+
+            </div>
         </div>
-    </div>
-    <script src="js/jquery-3.7.1.min.js"></script>
-    <script src="js/bootstrap.bundle.min.js"></script>
-    <script src="js/devices.js"></script>
+        <script src="js/jquery-3.7.1.min.js"></script>
+        <script src="js/bootstrap.bundle.min.js"></script>
+        <script src="js/devices.js"></script>
+        <script src="js/jquery-ui.min.js"></script>
+        <script src="js/jquery-ui-timepicker-addon.min.js"></script>
 </body>
 
 </html>
