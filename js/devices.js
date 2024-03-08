@@ -3,8 +3,8 @@ $(function () {
     getItem("devices", urlParams.get('groupid'));
     treeFunction();
     $(".datatimepicker").datetimepicker({
-        timeFormat: "HH:mm",
-        dataFormat: "yy-mm-dd",
+        timeFormat: "HH-mm",
+        dateFormat: "yy-mm-dd",
     });
     submitFunciton()
 });
@@ -96,29 +96,34 @@ function buildHtml(element, items) {
 
 function submitFunciton() {
     $(document).on("click", "#submit-btn", function (event) {
-        event.preventDefault();
+        // event.preventDefault();
         // var selectedValues = [];
         var devices={}
         $(".devices:checked").each(function () {
             // selectedValues.push($(this).val());
-            devices[$(this).val()]={deviceName:$(this).parent().children("label").text()};
+            devices[$(this).val()]={deviceName:$(this).siblings("label").text()};
             var sensors = {}
-            $(this).find('input.sensors:checked').each(function() {
+            $(this).siblings().find('input.sensors:checked').each(function() {
                 var sensorId = $(this).val();
-                var sensorName = $(this).closest('li').text().trim();
-                console.log(sensorId+"1");
-                // var channels = [];
-                // $(this).siblings('ul').find('input.channels:checked').each(function() {
-                //     channels.push($(this).val());
-                // });
-                // if (channels.length > 0) {
-                //     sensors[sensorId] = { sensorName: sensorName, channels: channels };
-                // }
+                var sensorName = $(this).siblings("label").text();
+                
+                var channels = [];
+                $(this).siblings('ul').find('input.channels:not(:checked)').each(function() {
+                    channels.push($(this).val());
+                });
+                if (channels.length > 0) {
+                    sensors[sensorId] = { sensorName: sensorName, channels: channels };
+                }
             });
+            devices[$(this).val()]["sensors"]=sensors;
         });
-        console.log(devices);
+        sessionStorage.setItem("devices", JSON.stringify(devices));
+        time={"startTime":$("#start").val(), "endTime":$("#end").val(), "interval":$("#avg").val()};
+        sessionStorage.setItem("time", JSON.stringify(time));
+        location.href = "download.html";
     });
 }
+
 // async function test() {
 //     // 请求用户授权访问文件系统
 //     async function requestFileSystemAccess() {
