@@ -24,8 +24,7 @@ async function requestFileSystemAccess() {
 async function savePng(directoryHandle, url) {
     var pngName = Object.keys(url);
     try {
-        console.log(url);
-        const fileHandle = await directoryHandle.getFileHandle(pngName + ".png", { create: true });
+        const fileHandle = await directoryHandle.getFileHandle(pngName + ".svg", { create: true });
         const writable = await fileHandle.createWritable();
         await writable.write(url[pngName]);
         await writable.close();
@@ -39,9 +38,9 @@ async function savePng(directoryHandle, url) {
 $(document).on("click", "#chooseDir-btn", async () => {
     const directoryHandle = await requestFileSystemAccess();
     if (directoryHandle) {
-        var urls = pngUrlGenerator(svgUrlGenerator());
+        // var urls = svgUrlGenerator();
+        var urls = await pngUrlGenerator(svgUrlGenerator());
         urls.forEach(url => {
-
             savePng(directoryHandle, url);
         })
     }
@@ -65,40 +64,24 @@ function svgUrlGenerator() {
             }
             urls.push({ [fileName]: u });
         })
+        
     })
     return urls;
 }
 
-function pngUrlGenerator(urls) {
-    urls.forEach(url => {
+async function pngUrlGenerator(urls) {
+    // await Promise.all(urls.forEach(url => {
+    await Promise.all(urls.map(async (url) => {
         var keys = Object.keys(url);
-        // Step 1: Fetch the SVG file
+        // if need add "convert svg to png" feature in the future, add in this block.
         fetch(url[keys])
             .then(response => response.text())
             .then(svgElement => {
-                svgData = new XMLSerializer().serializeToString(svgElement);
-                //將svg資料序列話成 string
-                let canvas = document.createElement("canvas");
-                //會了 把svg轉成png的 canvas
-                let ctx = canvas.getContext("2d");
-
-                let img = new Image();
-                // (btoa 把 string to base64)
-                img.setAttribute("src", "data:image/svg+xml;base64," + btoa(svgData));
-
-                img.onload = function () {
-                    canvas.width = img.width;
-                    canvas.height = img.height;
-                    ctx.drawImage(img, 0, 0);
-
-                    // Step 4: Convert canvas to PNG data URL
-                    const pngDataUrl = canvas.toDataURL('image/png');
-                    urls[keys] = pngDataUrl;
-                }
+                    url[keys] = svgElement;
             })
             .catch(error => {
                 console.error('Failed to fetch SVG:', error);
             });
-    })
+    }))
     return urls;
 }
