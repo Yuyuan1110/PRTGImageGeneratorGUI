@@ -30,3 +30,9 @@ li .toggle {
     cursor: pointer;
     color: blue;
 }
+
+#header {
+    position:sticky;
+	  top:0;
+}
+

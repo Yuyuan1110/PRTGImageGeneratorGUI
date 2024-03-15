@@ -30,3 +30,17 @@ li .toggle {
     cursor: pointer;
     color: blue;
 }
+
+input[type="file"] {
+    display: none;
+}
+
+#header {
+    position:sticky;
+	  top:0;
+}
+
+.info-row{
+    position:sticky;
+	  top: 80px;;
+}

@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap demo</title>
+    <title>PRTG GUI Tool</title>
     <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
     <link href="css/devices.css" rel="stylesheet" type="text/css">
     <link href="css/jquery-ui.min.css" rel="stylesheet" type="text/css">
@@ -22,20 +22,17 @@
         </div>
     </div>
     <div class="container-fluid">
-        <div class="row justify-content-center" id="devices">
-            <div class="col-3">Waiting...</div>
-        </div>
         <div class="row justify-content-center">
-            <div class="row">
-                <div class='col-3'>
+            <div class="row info-row">
+                <div class='col-xxl-2 col-md-3'>
                     <label>Start time:</label>
                     <input type="text" class="datatimepicker" id="start" />
                 </div>
-                <div class='col-3'>
+                <div class='col-xxl-2 col-md-3'>
                     <label>End time:</label>
                     <input type="text" class="datatimepicker" id="end" />
                 </div>
-                <div class='col-4'>
+                <div class='col-xxl-3 col-md-4'>
                     <label>Averaging Interval:</label>
                     <select name="avg" id="avg" class="valid" aria-invalid="false">
                         <option value="0">No interval (display raw data)</option>
@@ -55,10 +52,21 @@
                         <option value="86400">24 hours/1 day</option>
                     </select>
                 </div>
-                <div class="col-2">
+                <div class="col-xxl-1 col-md-2">
                     <button type="button" class="btn btn-primary" id="submit-btn">submit</button>
                 </div>
+                <div class="col-xxl-2 col-md-3 mb-3">
+                    <input type="file" id="fileInput" accept=".xml">
+                    <label class="btn btn-info" for="fileInput" type="button">Import XML</label>
+                    <label id="inputFile"></label>
+                </div>
+                <div class="col-xxl-2 col-md-3 mb-3">
+                    <label class="btn btn-info" id="fileOutput" type="button">Export XML</label>
+                </div>
+            </div>
 
+            <div class="row justify-content-center" id="devices">
+                <div class="col-3">Waiting...</div>
             </div>
         </div>
         <script src="js/jquery-3.7.1.min.js"></script>

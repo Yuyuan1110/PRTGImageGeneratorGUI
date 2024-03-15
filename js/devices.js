@@ -6,7 +6,8 @@ $(function () {
         timeFormat: "HH-mm",
         dateFormat: "yy-mm-dd",
     });
-    submitFunciton()
+    submitFunciton();
+    readXML();
 });
 
 var urlParams = new URLSearchParams(window.location.search);
@@ -124,35 +125,30 @@ function submitFunciton() {
     });
 }
 
-// async function test() {
-//     // 请求用户授权访问文件系统
-//     async function requestFileSystemAccess() {
-//         try {
-//             const directoryHandle = await window.showDirectoryPicker();
-//             return directoryHandle;
-//         } catch (error) {
-//             console.error('Failed to request file system access:', error);
-//         }
-//     }
+function readXML(){
+    $('#fileInput').on('change', function(event) {
+        const file = event.target.files[0];
 
-//     // 创建文件夹
-//     async function createDirectory(directoryHandle, directoryName) {
-//         try {
-//             await directoryHandle.getDirectoryHandle(directoryName, { create: true });
-//             console.log('Directory successfully created.');
-//         } catch (error) {
-//             console.error('Failed to create directory:', error);
-//         }
-//     }
+        if (!file) {
+            console.error('No file selected.');
+            return;
+        }
 
-//     // 当用户点击按钮时触发创建文件夹操作
-//     document.getElementById('requestAccessButton').addEventListener('click', async () => {
-//         const directoryHandle = await requestFileSystemAccess();
-//         if (directoryHandle) {
-//             const directoryName = 'NewFolder';
-//             await createDirectory(directoryHandle, directoryName);
-//         }
-//     });
-// }
+        $("#inputFile").text(file.name);
+        console.log(file.name);
+        const reader = new FileReader();
 
+        reader.onload = function(event) {
+            const xmlContent = event.target.result;
+            $('#output').text(xmlContent);
+            // 在这里可以对xmlContent进行进一步处理，比如解析XML等操作
+        };
 
+        reader.onerror = function(event) {
+            console.error('Error reading the file.', event.target.error);
+        };
+
+        // 以文本格式读取文件
+        reader.readAsText(file);
+    });
+}
