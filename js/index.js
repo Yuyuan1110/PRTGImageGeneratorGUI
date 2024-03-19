@@ -30,6 +30,7 @@ $("#submit-btn").click(function (event) {
         $.ajax({
             url: url,
             type: "GET",
+            rejectUnauthorized: false,
             data: groupsRequestData,
             dataType: "json",
             success: function (response) {
@@ -64,6 +65,7 @@ $("#submit-btn").click(function (event) {
         $.ajax({
             url: url,
             type: "GET",
+            rejectUnauthorized: false,
             data: probeNodesRequestData,
             dataType: "json",
             success: function (response) {

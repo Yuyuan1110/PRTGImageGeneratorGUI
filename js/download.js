@@ -25,24 +25,39 @@ async function savePng(directoryHandle, url) {
     var pngName = Object.keys(url);
     try {
         const fileHandle = await directoryHandle.getFileHandle(pngName + ".svg", { create: true });
-        const writable = await fileHandle.createWritable();
-        await writable.write(url[pngName]);
-        await writable.close();
+        if (fileHandle) {
+            const writable = await fileHandle.createWritable();
+            await writable.write(url[pngName]);
+            await writable.close();
 
-        console.log('svg saved successfully.');
+            console.log('svg saved successfully.');
+        } else {
+            console.log("file Handle is null");
+        }
     } catch (error) {
         console.error('Failed to save PNG:', error);
     }
 }
 
+
+
 $(document).on("click", "#chooseDir-btn", async () => {
     const directoryHandle = await requestFileSystemAccess();
     if (directoryHandle) {
-        var urls =await svgUrlGenerator();
-        urls.map(url => {
-            savePng(directoryHandle, url);
+        var urls = JSON.parse(sessionStorage.getItem("urls"));
+        urls.map(async (url) => {
+            // svgToImage(url);
+            await savePng(directoryHandle, url);
         })
     }
+})
+
+
+$(document).on("click", "#API-btn", async () => {
+    $("#API-btn").prop("disabled", true);
+    var urls = await svgUrlGenerator();
+    sessionStorage.setItem("urls", JSON.stringify(urls));
+    $("#API-btn").prop("disabled", false);
 })
 
 async function svgUrlGenerator() {
@@ -73,6 +88,18 @@ async function svgUrlGenerator() {
     }
     return urls;
 }
+
+
+// function svgToImage(svgData) {
+//     var pngName = Object.keys(url);
+//     return new Promise((resolve, reject) => {
+        
+//         const img = new Image();
+//         img.onload = () => resolve(img);
+//         img.onerror = reject;
+//         img.src = "data:image/svg+xml;base64," + btoa(svgData);
+//     });
+// }
 
 // async function pngUrlGenerator(urls) {
 //     await Promise.all(urls.map(async (url) => {

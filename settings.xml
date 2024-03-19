@@ -1,0 +1,3519 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<devices>
+    <device>
+        <deviceName>EAP-SIM-AAA01</deviceName>
+        <deviceID>22737</deviceID>
+        <sensors>
+            <sensor>
+                <sensorName>SNMP CPU 負載</sensorName>
+                <sensorID>22739</sensorID>
+                <channels>
+                    <channel>
+                        <channelName>下線時間</channelName>
+                        <channelID>-4</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 1</channelName>
+                        <channelID>2</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 2</channelName>
+                        <channelID>3</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 3</channelName>
+                        <channelID>4</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 4</channelName>
+                        <channelID>5</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 5</channelName>
+                        <channelID>6</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 6</channelName>
+                        <channelID>7</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 7</channelName>
+                        <channelID>8</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 8</channelName>
+                        <channelID>9</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 9</channelName>
+                        <channelID>10</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 10</channelName>
+                        <channelID>11</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 11</channelName>
+                        <channelID>12</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 12</channelName>
+                        <channelID>13</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 13</channelName>
+                        <channelID>14</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 14</channelName>
+                        <channelID>15</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 15</channelName>
+                        <channelID>16</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 16</channelName>
+                        <channelID>17</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 17</channelName>
+                        <channelID>18</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 18</channelName>
+                        <channelID>19</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 19</channelName>
+                        <channelID>20</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 20</channelName>
+                        <channelID>21</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 21</channelName>
+                        <channelID>22</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 22</channelName>
+                        <channelID>23</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 23</channelName>
+                        <channelID>24</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 24</channelName>
+                        <channelID>25</channelID>
+                    </channel>
+                </channels>
+            </sensor>
+            <sensor>
+                <sensorName>Disk Free: /home</sensorName>
+                <sensorID>62569</sensorID>
+                <channels>
+                    <channel>
+                        <channelName>Downtime</channelName>
+                        <channelID>-4</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Free Bytes</channelName>
+                        <channelID>1</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Total</channelName>
+                        <channelID>2</channelID>
+                    </channel>
+                </channels>
+            </sensor>
+            <sensor>
+                <sensorName>Memory: Physical memory</sensorName>
+                <sensorID>22740</sensorID>
+                <channels>
+                    <channel>
+                        <channelName>下線時間</channelName>
+                        <channelID>-4</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>可用記憶體</channelName>
+                        <channelID>1</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>總記憶體</channelName>
+                        <channelID>2</channelID>
+                    </channel>
+                </channels>
+            </sensor>
+            <sensor>
+                <sensorName>Memory: Swap space</sensorName>
+                <sensorID>22741</sensorID>
+                <channels>
+                    <channel>
+                        <channelName>下線時間</channelName>
+                        <channelID>-4</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>可用記憶體</channelName>
+                        <channelID>1</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>總記憶體</channelName>
+                        <channelID>2</channelID>
+                    </channel>
+                </channels>
+            </sensor>
+        </sensors>
+    </device>
+    <device>
+        <deviceName>EAP-SIM-AAA02</deviceName>
+        <deviceID>22752</deviceID>
+        <sensors>
+            <sensor>
+                <sensorName>SNMP CPU 負載</sensorName>
+                <sensorID>22754</sensorID>
+                <channels>
+                    <channel>
+                        <channelName>下線時間</channelName>
+                        <channelID>-4</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 1</channelName>
+                        <channelID>2</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 2</channelName>
+                        <channelID>3</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 3</channelName>
+                        <channelID>4</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 4</channelName>
+                        <channelID>5</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 5</channelName>
+                        <channelID>6</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 6</channelName>
+                        <channelID>7</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 7</channelName>
+                        <channelID>8</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 8</channelName>
+                        <channelID>9</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 9</channelName>
+                        <channelID>10</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 10</channelName>
+                        <channelID>11</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 11</channelName>
+                        <channelID>12</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 12</channelName>
+                        <channelID>13</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 13</channelName>
+                        <channelID>14</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 14</channelName>
+                        <channelID>15</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 15</channelName>
+                        <channelID>16</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 16</channelName>
+                        <channelID>17</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 17</channelName>
+                        <channelID>18</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 18</channelName>
+                        <channelID>19</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 19</channelName>
+                        <channelID>20</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 20</channelName>
+                        <channelID>21</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 21</channelName>
+                        <channelID>22</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 22</channelName>
+                        <channelID>23</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 23</channelName>
+                        <channelID>24</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 24</channelName>
+                        <channelID>25</channelID>
+                    </channel>
+                </channels>
+            </sensor>
+            <sensor>
+                <sensorName>Memory: Physical memory</sensorName>
+                <sensorID>22755</sensorID>
+                <channels>
+                    <channel>
+                        <channelName>下線時間</channelName>
+                        <channelID>-4</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>可用記憶體</channelName>
+                        <channelID>1</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>總記憶體</channelName>
+                        <channelID>2</channelID>
+                    </channel>
+                </channels>
+            </sensor>
+            <sensor>
+                <sensorName>Memory: Swap space</sensorName>
+                <sensorID>22756</sensorID>
+                <channels>
+                    <channel>
+                        <channelName>下線時間</channelName>
+                        <channelID>-4</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>可用記憶體</channelName>
+                        <channelID>1</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>總記憶體</channelName>
+                        <channelID>2</channelID>
+                    </channel>
+                </channels>
+            </sensor>
+            <sensor>
+                <sensorName>Disk Free: /home</sensorName>
+                <sensorID>62568</sensorID>
+                <channels>
+                    <channel>
+                        <channelName>Downtime</channelName>
+                        <channelID>-4</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Free Bytes</channelName>
+                        <channelID>1</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Total</channelName>
+                        <channelID>2</channelID>
+                    </channel>
+                </channels>
+            </sensor>
+        </sensors>
+    </device>
+    <device>
+        <deviceName>EAP-SIM-AAA03</deviceName>
+        <deviceID>22767</deviceID>
+        <sensors>
+            <sensor>
+                <sensorName>SNMP CPU 負載</sensorName>
+                <sensorID>22769</sensorID>
+                <channels>
+                    <channel>
+                        <channelName>下線時間</channelName>
+                        <channelID>-4</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 1</channelName>
+                        <channelID>2</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 2</channelName>
+                        <channelID>3</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 3</channelName>
+                        <channelID>4</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 4</channelName>
+                        <channelID>5</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 5</channelName>
+                        <channelID>6</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 6</channelName>
+                        <channelID>7</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 7</channelName>
+                        <channelID>8</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 8</channelName>
+                        <channelID>9</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 9</channelName>
+                        <channelID>10</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 10</channelName>
+                        <channelID>11</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 11</channelName>
+                        <channelID>12</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 12</channelName>
+                        <channelID>13</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 13</channelName>
+                        <channelID>14</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 14</channelName>
+                        <channelID>15</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 15</channelName>
+                        <channelID>16</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 16</channelName>
+                        <channelID>17</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 17</channelName>
+                        <channelID>18</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 18</channelName>
+                        <channelID>19</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 19</channelName>
+                        <channelID>20</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 20</channelName>
+                        <channelID>21</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 21</channelName>
+                        <channelID>22</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 22</channelName>
+                        <channelID>23</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 23</channelName>
+                        <channelID>24</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 24</channelName>
+                        <channelID>25</channelID>
+                    </channel>
+                </channels>
+            </sensor>
+            <sensor>
+                <sensorName>Memory: Physical memory</sensorName>
+                <sensorID>22770</sensorID>
+                <channels>
+                    <channel>
+                        <channelName>下線時間</channelName>
+                        <channelID>-4</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>可用記憶體</channelName>
+                        <channelID>1</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>總記憶體</channelName>
+                        <channelID>2</channelID>
+                    </channel>
+                </channels>
+            </sensor>
+            <sensor>
+                <sensorName>Memory: Swap space</sensorName>
+                <sensorID>22771</sensorID>
+                <channels>
+                    <channel>
+                        <channelName>下線時間</channelName>
+                        <channelID>-4</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>可用記憶體</channelName>
+                        <channelID>1</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>總記憶體</channelName>
+                        <channelID>2</channelID>
+                    </channel>
+                </channels>
+            </sensor>
+            <sensor>
+                <sensorName>Disk Free: /home</sensorName>
+                <sensorID>62567</sensorID>
+                <channels>
+                    <channel>
+                        <channelName>Downtime</channelName>
+                        <channelID>-4</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Free Bytes</channelName>
+                        <channelID>1</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Total</channelName>
+                        <channelID>2</channelID>
+                    </channel>
+                </channels>
+            </sensor>
+        </sensors>
+    </device>
+    <device>
+        <deviceName>UAM_AAAR3</deviceName>
+        <deviceID>23112</deviceID>
+        <sensors>
+            <sensor>
+                <sensorName>Disk Free: /</sensorName>
+                <sensorID>23190</sensorID>
+                <channels>
+                    <channel>
+                        <channelName>下線時間</channelName>
+                        <channelID>-4</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>可用位元組</channelName>
+                        <channelID>1</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>合計</channelName>
+                        <channelID>2</channelID>
+                    </channel>
+                </channels>
+            </sensor>
+            <sensor>
+                <sensorName>Disk Free: /dev/shm</sensorName>
+                <sensorID>23191</sensorID>
+                <channels>
+                    <channel>
+                        <channelName>下線時間</channelName>
+                        <channelID>-4</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>可用位元組</channelName>
+                        <channelID>1</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>合計</channelName>
+                        <channelID>2</channelID>
+                    </channel>
+                </channels>
+            </sensor>
+            <sensor>
+                <sensorName>CPU 負載</sensorName>
+                <sensorID>23195</sensorID>
+                <channels>
+                    <channel>
+                        <channelName>下線時間</channelName>
+                        <channelID>-4</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 1</channelName>
+                        <channelID>2</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 2</channelName>
+                        <channelID>3</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 3</channelName>
+                        <channelID>4</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 4</channelName>
+                        <channelID>5</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 5</channelName>
+                        <channelID>6</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 6</channelName>
+                        <channelID>7</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 7</channelName>
+                        <channelID>8</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 8</channelName>
+                        <channelID>9</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 9</channelName>
+                        <channelID>10</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 10</channelName>
+                        <channelID>11</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 11</channelName>
+                        <channelID>12</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 12</channelName>
+                        <channelID>13</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 13</channelName>
+                        <channelID>14</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 14</channelName>
+                        <channelID>15</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 15</channelName>
+                        <channelID>16</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 16</channelName>
+                        <channelID>17</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 17</channelName>
+                        <channelID>18</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 18</channelName>
+                        <channelID>19</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 19</channelName>
+                        <channelID>20</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 20</channelName>
+                        <channelID>21</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 21</channelName>
+                        <channelID>22</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 22</channelName>
+                        <channelID>23</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 23</channelName>
+                        <channelID>24</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 24</channelName>
+                        <channelID>25</channelID>
+                    </channel>
+                </channels>
+            </sensor>
+            <sensor>
+                <sensorName>Memory: Physical memory</sensorName>
+                <sensorID>23196</sensorID>
+                <channels>
+                    <channel>
+                        <channelName>下線時間</channelName>
+                        <channelID>-4</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>可用記憶體</channelName>
+                        <channelID>1</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>總記憶體</channelName>
+                        <channelID>2</channelID>
+                    </channel>
+                </channels>
+            </sensor>
+            <sensor>
+                <sensorName>Memory: Swap space</sensorName>
+                <sensorID>23198</sensorID>
+                <channels>
+                    <channel>
+                        <channelName>下線時間</channelName>
+                        <channelID>-4</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>可用記憶體</channelName>
+                        <channelID>1</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>總記憶體</channelName>
+                        <channelID>2</channelID>
+                    </channel>
+                </channels>
+            </sensor>
+        </sensors>
+    </device>
+    <device>
+        <deviceName>UAM_AAAR4</deviceName>
+        <deviceID>23180</deviceID>
+        <sensors>
+            <sensor>
+                <sensorName>Disk Free: /</sensorName>
+                <sensorID>23212</sensorID>
+                <channels>
+                    <channel>
+                        <channelName>下線時間</channelName>
+                        <channelID>-4</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>可用位元組</channelName>
+                        <channelID>1</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>合計</channelName>
+                        <channelID>2</channelID>
+                    </channel>
+                </channels>
+            </sensor>
+            <sensor>
+                <sensorName>Disk Free: /dev/shm</sensorName>
+                <sensorID>23213</sensorID>
+                <channels>
+                    <channel>
+                        <channelName>Downtime</channelName>
+                        <channelID>-4</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>可用位元組</channelName>
+                        <channelID>1</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>合計</channelName>
+                        <channelID>2</channelID>
+                    </channel>
+                </channels>
+            </sensor>
+            <sensor>
+                <sensorName>CPU 負載 1</sensorName>
+                <sensorID>23215</sensorID>
+                <channels>
+                    <channel>
+                        <channelName>下線時間</channelName>
+                        <channelID>-4</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 1</channelName>
+                        <channelID>2</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 2</channelName>
+                        <channelID>3</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 3</channelName>
+                        <channelID>4</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 4</channelName>
+                        <channelID>5</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 5</channelName>
+                        <channelID>6</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 6</channelName>
+                        <channelID>7</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 7</channelName>
+                        <channelID>8</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 8</channelName>
+                        <channelID>9</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 9</channelName>
+                        <channelID>10</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 10</channelName>
+                        <channelID>11</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 11</channelName>
+                        <channelID>12</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 12</channelName>
+                        <channelID>13</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 13</channelName>
+                        <channelID>14</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 14</channelName>
+                        <channelID>15</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 15</channelName>
+                        <channelID>16</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 16</channelName>
+                        <channelID>17</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 17</channelName>
+                        <channelID>18</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 18</channelName>
+                        <channelID>19</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 19</channelName>
+                        <channelID>20</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 20</channelName>
+                        <channelID>21</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 21</channelName>
+                        <channelID>22</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 22</channelName>
+                        <channelID>23</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 23</channelName>
+                        <channelID>24</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 24</channelName>
+                        <channelID>25</channelID>
+                    </channel>
+                </channels>
+            </sensor>
+            <sensor>
+                <sensorName>Memory: Physical memory</sensorName>
+                <sensorID>23216</sensorID>
+                <channels>
+                    <channel>
+                        <channelName>下線時間</channelName>
+                        <channelID>-4</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>可用記憶體</channelName>
+                        <channelID>1</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>總記憶體</channelName>
+                        <channelID>2</channelID>
+                    </channel>
+                </channels>
+            </sensor>
+            <sensor>
+                <sensorName>Memory: Swap space</sensorName>
+                <sensorID>23218</sensorID>
+                <channels>
+                    <channel>
+                        <channelName>下線時間</channelName>
+                        <channelID>-4</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>可用記憶體</channelName>
+                        <channelID>1</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>總記憶體</channelName>
+                        <channelID>2</channelID>
+                    </channel>
+                </channels>
+            </sensor>
+        </sensors>
+    </device>
+    <device>
+        <deviceName>UAM_AAAR5</deviceName>
+        <deviceID>23181</deviceID>
+        <sensors>
+            <sensor>
+                <sensorName>Disk Free: /</sensorName>
+                <sensorID>23226</sensorID>
+                <channels>
+                    <channel>
+                        <channelName>下線時間</channelName>
+                        <channelID>-4</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>可用位元組</channelName>
+                        <channelID>1</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>合計</channelName>
+                        <channelID>2</channelID>
+                    </channel>
+                </channels>
+            </sensor>
+            <sensor>
+                <sensorName>Disk Free: /dev/shm</sensorName>
+                <sensorID>23227</sensorID>
+                <channels>
+                    <channel>
+                        <channelName>下線時間</channelName>
+                        <channelID>-4</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>可用位元組</channelName>
+                        <channelID>1</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>合計</channelName>
+                        <channelID>2</channelID>
+                    </channel>
+                </channels>
+            </sensor>
+            <sensor>
+                <sensorName>CPU 負載 1</sensorName>
+                <sensorID>23233</sensorID>
+                <channels>
+                    <channel>
+                        <channelName>下線時間</channelName>
+                        <channelID>-4</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 1</channelName>
+                        <channelID>2</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 2</channelName>
+                        <channelID>3</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 3</channelName>
+                        <channelID>4</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 4</channelName>
+                        <channelID>5</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 5</channelName>
+                        <channelID>6</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 6</channelName>
+                        <channelID>7</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 7</channelName>
+                        <channelID>8</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 8</channelName>
+                        <channelID>9</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 9</channelName>
+                        <channelID>10</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 10</channelName>
+                        <channelID>11</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 11</channelName>
+                        <channelID>12</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 12</channelName>
+                        <channelID>13</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 13</channelName>
+                        <channelID>14</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 14</channelName>
+                        <channelID>15</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 15</channelName>
+                        <channelID>16</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 16</channelName>
+                        <channelID>17</channelID>
+                    </channel>
+                </channels>
+            </sensor>
+            <sensor>
+                <sensorName>Memory: Physical memory</sensorName>
+                <sensorID>23234</sensorID>
+                <channels>
+                    <channel>
+                        <channelName>下線時間</channelName>
+                        <channelID>-4</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>可用記憶體</channelName>
+                        <channelID>1</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>總記憶體</channelName>
+                        <channelID>2</channelID>
+                    </channel>
+                </channels>
+            </sensor>
+            <sensor>
+                <sensorName>Memory: Swap space</sensorName>
+                <sensorID>23236</sensorID>
+                <channels>
+                    <channel>
+                        <channelName>下線時間</channelName>
+                        <channelID>-4</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>可用記憶體</channelName>
+                        <channelID>1</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>總記憶體</channelName>
+                        <channelID>2</channelID>
+                    </channel>
+                </channels>
+            </sensor>
+        </sensors>
+    </device>
+    <device>
+        <deviceName>EAP-SIM-ACCT01</deviceName>
+        <deviceID>22782</deviceID>
+        <sensors>
+            <sensor>
+                <sensorName>SNMP CPU 負載</sensorName>
+                <sensorID>22784</sensorID>
+                <channels>
+                    <channel>
+                        <channelName>下線時間</channelName>
+                        <channelID>-4</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 1</channelName>
+                        <channelID>2</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 2</channelName>
+                        <channelID>3</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 3</channelName>
+                        <channelID>4</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 4</channelName>
+                        <channelID>5</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 5</channelName>
+                        <channelID>6</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 6</channelName>
+                        <channelID>7</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 7</channelName>
+                        <channelID>8</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 8</channelName>
+                        <channelID>9</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 9</channelName>
+                        <channelID>10</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 10</channelName>
+                        <channelID>11</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 11</channelName>
+                        <channelID>12</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 12</channelName>
+                        <channelID>13</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 13</channelName>
+                        <channelID>14</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 14</channelName>
+                        <channelID>15</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 15</channelName>
+                        <channelID>16</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 16</channelName>
+                        <channelID>17</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 17</channelName>
+                        <channelID>18</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 18</channelName>
+                        <channelID>19</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 19</channelName>
+                        <channelID>20</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 20</channelName>
+                        <channelID>21</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 21</channelName>
+                        <channelID>22</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 22</channelName>
+                        <channelID>23</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 23</channelName>
+                        <channelID>24</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 24</channelName>
+                        <channelID>25</channelID>
+                    </channel>
+                </channels>
+            </sensor>
+            <sensor>
+                <sensorName>Memory: Physical memory</sensorName>
+                <sensorID>22785</sensorID>
+                <channels>
+                    <channel>
+                        <channelName>下線時間</channelName>
+                        <channelID>-4</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>可用記憶體</channelName>
+                        <channelID>1</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>總記憶體</channelName>
+                        <channelID>2</channelID>
+                    </channel>
+                </channels>
+            </sensor>
+            <sensor>
+                <sensorName>Memory: Swap space</sensorName>
+                <sensorID>22786</sensorID>
+                <channels>
+                    <channel>
+                        <channelName>下線時間</channelName>
+                        <channelID>-4</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>可用記憶體</channelName>
+                        <channelID>1</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>總記憶體</channelName>
+                        <channelID>2</channelID>
+                    </channel>
+                </channels>
+            </sensor>
+            <sensor>
+                <sensorName>Disk Free: /home</sensorName>
+                <sensorID>22791</sensorID>
+                <channels>
+                    <channel>
+                        <channelName>下線時間</channelName>
+                        <channelID>-4</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>可用位元組</channelName>
+                        <channelID>1</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>合計</channelName>
+                        <channelID>2</channelID>
+                    </channel>
+                </channels>
+            </sensor>
+        </sensors>
+    </device>
+    <device>
+        <deviceName>EAP-SIM-ACCT02</deviceName>
+        <deviceID>22797</deviceID>
+        <sensors>
+            <sensor>
+                <sensorName>SNMP CPU 負載</sensorName>
+                <sensorID>22799</sensorID>
+                <channels>
+                    <channel>
+                        <channelName>下線時間</channelName>
+                        <channelID>-4</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 1</channelName>
+                        <channelID>2</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 2</channelName>
+                        <channelID>3</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 3</channelName>
+                        <channelID>4</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 4</channelName>
+                        <channelID>5</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 5</channelName>
+                        <channelID>6</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 6</channelName>
+                        <channelID>7</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 7</channelName>
+                        <channelID>8</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 8</channelName>
+                        <channelID>9</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 9</channelName>
+                        <channelID>10</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 10</channelName>
+                        <channelID>11</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 11</channelName>
+                        <channelID>12</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 12</channelName>
+                        <channelID>13</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 13</channelName>
+                        <channelID>14</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 14</channelName>
+                        <channelID>15</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 15</channelName>
+                        <channelID>16</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 16</channelName>
+                        <channelID>17</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 17</channelName>
+                        <channelID>18</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 18</channelName>
+                        <channelID>19</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 19</channelName>
+                        <channelID>20</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 20</channelName>
+                        <channelID>21</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 21</channelName>
+                        <channelID>22</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 22</channelName>
+                        <channelID>23</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 23</channelName>
+                        <channelID>24</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 24</channelName>
+                        <channelID>25</channelID>
+                    </channel>
+                </channels>
+            </sensor>
+            <sensor>
+                <sensorName>Memory: Physical memory</sensorName>
+                <sensorID>22800</sensorID>
+                <channels>
+                    <channel>
+                        <channelName>下線時間</channelName>
+                        <channelID>-4</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>可用記憶體</channelName>
+                        <channelID>1</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>總記憶體</channelName>
+                        <channelID>2</channelID>
+                    </channel>
+                </channels>
+            </sensor>
+            <sensor>
+                <sensorName>Memory: Swap space</sensorName>
+                <sensorID>22801</sensorID>
+                <channels>
+                    <channel>
+                        <channelName>下線時間</channelName>
+                        <channelID>-4</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>可用記憶體</channelName>
+                        <channelID>1</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>總記憶體</channelName>
+                        <channelID>2</channelID>
+                    </channel>
+                </channels>
+            </sensor>
+            <sensor>
+                <sensorName>Disk Free: /home</sensorName>
+                <sensorID>22806</sensorID>
+                <channels>
+                    <channel>
+                        <channelName>下線時間</channelName>
+                        <channelID>-4</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>可用位元組</channelName>
+                        <channelID>1</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>合計</channelName>
+                        <channelID>2</channelID>
+                    </channel>
+                </channels>
+            </sensor>
+        </sensors>
+    </device>
+    <device>
+        <deviceName>EAP-SIM-CDR</deviceName>
+        <deviceID>22877</deviceID>
+        <sensors>
+            <sensor>
+                <sensorName>Disk Free: /</sensorName>
+                <sensorID>22888</sensorID>
+                <channels>
+                    <channel>
+                        <channelName>下線時間</channelName>
+                        <channelID>-4</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>可用位元組</channelName>
+                        <channelID>1</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>合計</channelName>
+                        <channelID>2</channelID>
+                    </channel>
+                </channels>
+            </sensor>
+            <sensor>
+                <sensorName>Disk Free: /dev/shm</sensorName>
+                <sensorID>22889</sensorID>
+                <channels>
+                    <channel>
+                        <channelName>Downtime</channelName>
+                        <channelID>-4</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>可用位元組</channelName>
+                        <channelID>1</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>合計</channelName>
+                        <channelID>2</channelID>
+                    </channel>
+                </channels>
+            </sensor>
+            <sensor>
+                <sensorName>CPU 負載 1</sensorName>
+                <sensorID>22891</sensorID>
+                <channels>
+                    <channel>
+                        <channelName>下線時間</channelName>
+                        <channelID>-4</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 1</channelName>
+                        <channelID>2</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 2</channelName>
+                        <channelID>3</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 3</channelName>
+                        <channelID>4</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 4</channelName>
+                        <channelID>5</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 5</channelName>
+                        <channelID>6</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 6</channelName>
+                        <channelID>7</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 7</channelName>
+                        <channelID>8</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 8</channelName>
+                        <channelID>9</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 9</channelName>
+                        <channelID>10</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 10</channelName>
+                        <channelID>11</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 11</channelName>
+                        <channelID>12</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 12</channelName>
+                        <channelID>13</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 13</channelName>
+                        <channelID>14</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 14</channelName>
+                        <channelID>15</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 15</channelName>
+                        <channelID>16</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 16</channelName>
+                        <channelID>17</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 17</channelName>
+                        <channelID>18</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 18</channelName>
+                        <channelID>19</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 19</channelName>
+                        <channelID>20</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 20</channelName>
+                        <channelID>21</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 21</channelName>
+                        <channelID>22</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 22</channelName>
+                        <channelID>23</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 23</channelName>
+                        <channelID>24</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 24</channelName>
+                        <channelID>25</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 25</channelName>
+                        <channelID>26</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 26</channelName>
+                        <channelID>27</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 27</channelName>
+                        <channelID>28</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 28</channelName>
+                        <channelID>29</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 29</channelName>
+                        <channelID>30</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 30</channelName>
+                        <channelID>31</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 31</channelName>
+                        <channelID>32</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 32</channelName>
+                        <channelID>33</channelID>
+                    </channel>
+                </channels>
+            </sensor>
+            <sensor>
+                <sensorName>Memory: Physical memory</sensorName>
+                <sensorID>22892</sensorID>
+                <channels>
+                    <channel>
+                        <channelName>下線時間</channelName>
+                        <channelID>-4</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>可用記憶體</channelName>
+                        <channelID>1</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>總記憶體</channelName>
+                        <channelID>2</channelID>
+                    </channel>
+                </channels>
+            </sensor>
+            <sensor>
+                <sensorName>Memory: Swap space</sensorName>
+                <sensorID>22894</sensorID>
+                <channels>
+                    <channel>
+                        <channelName>下線時間</channelName>
+                        <channelID>-4</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>可用記憶體</channelName>
+                        <channelID>1</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>總記憶體</channelName>
+                        <channelID>2</channelID>
+                    </channel>
+                </channels>
+            </sensor>
+        </sensors>
+    </device>
+    <device>
+        <deviceName>CDR01</deviceName>
+        <deviceID>22881</deviceID>
+        <sensors>
+            <sensor>
+                <sensorName>Disk Free: /</sensorName>
+                <sensorID>22903</sensorID>
+                <channels>
+                    <channel>
+                        <channelName>下線時間</channelName>
+                        <channelID>-4</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>可用位元組</channelName>
+                        <channelID>1</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>合計</channelName>
+                        <channelID>2</channelID>
+                    </channel>
+                </channels>
+            </sensor>
+            <sensor>
+                <sensorName>Disk Free: /dev/shm</sensorName>
+                <sensorID>22904</sensorID>
+                <channels>
+                    <channel>
+                        <channelName>下線時間</channelName>
+                        <channelID>-4</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>可用位元組</channelName>
+                        <channelID>1</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>合計</channelName>
+                        <channelID>2</channelID>
+                    </channel>
+                </channels>
+            </sensor>
+            <sensor>
+                <sensorName>CPU 負載 1</sensorName>
+                <sensorID>22906</sensorID>
+                <channels>
+                    <channel>
+                        <channelName>下線時間</channelName>
+                        <channelID>-4</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 1</channelName>
+                        <channelID>2</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 2</channelName>
+                        <channelID>3</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 3</channelName>
+                        <channelID>4</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 4</channelName>
+                        <channelID>5</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 5</channelName>
+                        <channelID>6</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 6</channelName>
+                        <channelID>7</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 7</channelName>
+                        <channelID>8</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 8</channelName>
+                        <channelID>9</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 9</channelName>
+                        <channelID>10</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 10</channelName>
+                        <channelID>11</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 11</channelName>
+                        <channelID>12</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 12</channelName>
+                        <channelID>13</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 13</channelName>
+                        <channelID>14</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 14</channelName>
+                        <channelID>15</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 15</channelName>
+                        <channelID>16</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 16</channelName>
+                        <channelID>17</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 17</channelName>
+                        <channelID>18</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 18</channelName>
+                        <channelID>19</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 19</channelName>
+                        <channelID>20</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 20</channelName>
+                        <channelID>21</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 21</channelName>
+                        <channelID>22</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 22</channelName>
+                        <channelID>23</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 23</channelName>
+                        <channelID>24</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 24</channelName>
+                        <channelID>25</channelID>
+                    </channel>
+                </channels>
+            </sensor>
+            <sensor>
+                <sensorName>Memory: Physical memory</sensorName>
+                <sensorID>22907</sensorID>
+                <channels>
+                    <channel>
+                        <channelName>下線時間</channelName>
+                        <channelID>-4</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>可用記憶體</channelName>
+                        <channelID>1</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>總記憶體</channelName>
+                        <channelID>2</channelID>
+                    </channel>
+                </channels>
+            </sensor>
+            <sensor>
+                <sensorName>Memory: Swap space</sensorName>
+                <sensorID>22909</sensorID>
+                <channels>
+                    <channel>
+                        <channelName>下線時間</channelName>
+                        <channelID>-4</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>可用記憶體</channelName>
+                        <channelID>1</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>總記憶體</channelName>
+                        <channelID>2</channelID>
+                    </channel>
+                </channels>
+            </sensor>
+        </sensors>
+    </device>
+    <device>
+        <deviceName>EAP-SIM FC01</deviceName>
+        <deviceID>23097</deviceID>
+        <sensors>
+            <sensor>
+                <sensorName>SNMP CPU 負載</sensorName>
+                <sensorID>23099</sensorID>
+                <channels>
+                    <channel>
+                        <channelName>下線時間</channelName>
+                        <channelID>-4</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 1</channelName>
+                        <channelID>2</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 2</channelName>
+                        <channelID>3</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 3</channelName>
+                        <channelID>4</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 4</channelName>
+                        <channelID>5</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 5</channelName>
+                        <channelID>6</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 6</channelName>
+                        <channelID>7</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 7</channelName>
+                        <channelID>8</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 8</channelName>
+                        <channelID>9</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 9</channelName>
+                        <channelID>10</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 10</channelName>
+                        <channelID>11</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 11</channelName>
+                        <channelID>12</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 12</channelName>
+                        <channelID>13</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 13</channelName>
+                        <channelID>14</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 14</channelName>
+                        <channelID>15</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 15</channelName>
+                        <channelID>16</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 16</channelName>
+                        <channelID>17</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 17</channelName>
+                        <channelID>18</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 18</channelName>
+                        <channelID>19</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 19</channelName>
+                        <channelID>20</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 20</channelName>
+                        <channelID>21</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 21</channelName>
+                        <channelID>22</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 22</channelName>
+                        <channelID>23</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 23</channelName>
+                        <channelID>24</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 24</channelName>
+                        <channelID>25</channelID>
+                    </channel>
+                </channels>
+            </sensor>
+            <sensor>
+                <sensorName>Memory: Physical memory</sensorName>
+                <sensorID>23100</sensorID>
+                <channels>
+                    <channel>
+                        <channelName>下線時間</channelName>
+                        <channelID>-4</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>可用記憶體</channelName>
+                        <channelID>1</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>總記憶體</channelName>
+                        <channelID>2</channelID>
+                    </channel>
+                </channels>
+            </sensor>
+            <sensor>
+                <sensorName>Memory: Swap space</sensorName>
+                <sensorID>23101</sensorID>
+                <channels>
+                    <channel>
+                        <channelName>下線時間</channelName>
+                        <channelID>-4</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>可用記憶體</channelName>
+                        <channelID>1</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>總記憶體</channelName>
+                        <channelID>2</channelID>
+                    </channel>
+                </channels>
+            </sensor>
+            <sensor>
+                <sensorName>Disk Free: /</sensorName>
+                <sensorID>23103</sensorID>
+                <channels>
+                    <channel>
+                        <channelName>下線時間</channelName>
+                        <channelID>-4</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>可用位元組</channelName>
+                        <channelID>1</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>合計</channelName>
+                        <channelID>2</channelID>
+                    </channel>
+                </channels>
+            </sensor>
+            <sensor>
+                <sensorName>Disk Free: /dev/shm</sensorName>
+                <sensorID>23105</sensorID>
+                <channels>
+                    <channel>
+                        <channelName>下線時間</channelName>
+                        <channelID>-4</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>可用位元組</channelName>
+                        <channelID>1</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>合計</channelName>
+                        <channelID>2</channelID>
+                    </channel>
+                </channels>
+            </sensor>
+        </sensors>
+    </device>
+    <device>
+        <deviceName>EAP-SIM OTA01</deviceName>
+        <deviceID>23048</deviceID>
+        <sensors>
+            <sensor>
+                <sensorName>SNMP CPU 負載</sensorName>
+                <sensorID>25123</sensorID>
+                <channels>
+                    <channel>
+                        <channelName>下線時間</channelName>
+                        <channelID>-4</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 1</channelName>
+                        <channelID>2</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 2</channelName>
+                        <channelID>3</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 3</channelName>
+                        <channelID>4</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 4</channelName>
+                        <channelID>5</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 5</channelName>
+                        <channelID>6</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 6</channelName>
+                        <channelID>7</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 7</channelName>
+                        <channelID>8</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 8</channelName>
+                        <channelID>9</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 9</channelName>
+                        <channelID>10</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 10</channelName>
+                        <channelID>11</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 11</channelName>
+                        <channelID>12</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 12</channelName>
+                        <channelID>13</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 13</channelName>
+                        <channelID>14</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 14</channelName>
+                        <channelID>15</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 15</channelName>
+                        <channelID>16</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 16</channelName>
+                        <channelID>17</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 17</channelName>
+                        <channelID>18</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 18</channelName>
+                        <channelID>19</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 19</channelName>
+                        <channelID>20</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 20</channelName>
+                        <channelID>21</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 21</channelName>
+                        <channelID>22</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 22</channelName>
+                        <channelID>23</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 23</channelName>
+                        <channelID>24</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 24</channelName>
+                        <channelID>25</channelID>
+                    </channel>
+                </channels>
+            </sensor>
+            <sensor>
+                <sensorName>Memory: Physical memory</sensorName>
+                <sensorID>25191</sensorID>
+                <channels>
+                    <channel>
+                        <channelName>下線時間</channelName>
+                        <channelID>-4</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>可用記憶體</channelName>
+                        <channelID>1</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>總記憶體</channelName>
+                        <channelID>2</channelID>
+                    </channel>
+                </channels>
+            </sensor>
+            <sensor>
+                <sensorName>Memory: Swap space</sensorName>
+                <sensorID>25192</sensorID>
+                <channels>
+                    <channel>
+                        <channelName>下線時間</channelName>
+                        <channelID>-4</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>可用記憶體</channelName>
+                        <channelID>1</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>總記憶體</channelName>
+                        <channelID>2</channelID>
+                    </channel>
+                </channels>
+            </sensor>
+            <sensor>
+                <sensorName>Disk Free: /home</sensorName>
+                <sensorID>25197</sensorID>
+                <channels>
+                    <channel>
+                        <channelName>下線時間</channelName>
+                        <channelID>-4</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>可用位元組</channelName>
+                        <channelID>1</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>合計</channelName>
+                        <channelID>2</channelID>
+                    </channel>
+                </channels>
+            </sensor>
+        </sensors>
+    </device>
+    <device>
+        <deviceName>EAP-SIM OTA02</deviceName>
+        <deviceID>23049</deviceID>
+        <sensors>
+            <sensor>
+                <sensorName>SNMP CPU 負載</sensorName>
+                <sensorID>25203</sensorID>
+                <channels>
+                    <channel>
+                        <channelName>下線時間</channelName>
+                        <channelID>-4</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 1</channelName>
+                        <channelID>2</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 2</channelName>
+                        <channelID>3</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 3</channelName>
+                        <channelID>4</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 4</channelName>
+                        <channelID>5</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 5</channelName>
+                        <channelID>6</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 6</channelName>
+                        <channelID>7</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 7</channelName>
+                        <channelID>8</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 8</channelName>
+                        <channelID>9</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 9</channelName>
+                        <channelID>10</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 10</channelName>
+                        <channelID>11</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 11</channelName>
+                        <channelID>12</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 12</channelName>
+                        <channelID>13</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 13</channelName>
+                        <channelID>14</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 14</channelName>
+                        <channelID>15</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 15</channelName>
+                        <channelID>16</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 16</channelName>
+                        <channelID>17</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 17</channelName>
+                        <channelID>18</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 18</channelName>
+                        <channelID>19</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 19</channelName>
+                        <channelID>20</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 20</channelName>
+                        <channelID>21</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 21</channelName>
+                        <channelID>22</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 22</channelName>
+                        <channelID>23</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 23</channelName>
+                        <channelID>24</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 24</channelName>
+                        <channelID>25</channelID>
+                    </channel>
+                </channels>
+            </sensor>
+            <sensor>
+                <sensorName>Memory: Physical memory</sensorName>
+                <sensorID>25204</sensorID>
+                <channels>
+                    <channel>
+                        <channelName>下線時間</channelName>
+                        <channelID>-4</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>可用記憶體</channelName>
+                        <channelID>1</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>總記憶體</channelName>
+                        <channelID>2</channelID>
+                    </channel>
+                </channels>
+            </sensor>
+            <sensor>
+                <sensorName>Memory: Swap space</sensorName>
+                <sensorID>25205</sensorID>
+                <channels>
+                    <channel>
+                        <channelName>下線時間</channelName>
+                        <channelID>-4</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>可用記憶體</channelName>
+                        <channelID>1</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>總記憶體</channelName>
+                        <channelID>2</channelID>
+                    </channel>
+                </channels>
+            </sensor>
+            <sensor>
+                <sensorName>Disk Free: /home</sensorName>
+                <sensorID>25213</sensorID>
+                <channels>
+                    <channel>
+                        <channelName>下線時間</channelName>
+                        <channelID>-4</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>可用位元組</channelName>
+                        <channelID>1</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>合計</channelName>
+                        <channelID>2</channelID>
+                    </channel>
+                </channels>
+            </sensor>
+        </sensors>
+    </device>
+    <device>
+        <deviceName>EAP-SIM-SMS01</deviceName>
+        <deviceID>50917</deviceID>
+        <sensors>
+            <sensor>
+                <sensorName>Memory: Physical memory</sensorName>
+                <sensorID>50919</sensorID>
+                <channels>
+                    <channel>
+                        <channelName>Downtime</channelName>
+                        <channelID>-4</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Available Memory</channelName>
+                        <channelID>1</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Total Memory</channelName>
+                        <channelID>2</channelID>
+                    </channel>
+                </channels>
+            </sensor>
+            <sensor>
+                <sensorName>Memory: Swap space</sensorName>
+                <sensorID>50920</sensorID>
+                <channels>
+                    <channel>
+                        <channelName>Downtime</channelName>
+                        <channelID>-4</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Available Memory</channelName>
+                        <channelID>1</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Total Memory</channelName>
+                        <channelID>2</channelID>
+                    </channel>
+                </channels>
+            </sensor>
+            <sensor>
+                <sensorName>CPU Load</sensorName>
+                <sensorID>50922</sensorID>
+                <channels>
+                    <channel>
+                        <channelName>Downtime</channelName>
+                        <channelID>-4</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 1</channelName>
+                        <channelID>2</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 2</channelName>
+                        <channelID>3</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 3</channelName>
+                        <channelID>4</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 4</channelName>
+                        <channelID>5</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 5</channelName>
+                        <channelID>6</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 6</channelName>
+                        <channelID>7</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 7</channelName>
+                        <channelID>8</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 8</channelName>
+                        <channelID>9</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 9</channelName>
+                        <channelID>10</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 10</channelName>
+                        <channelID>11</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 11</channelName>
+                        <channelID>12</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 12</channelName>
+                        <channelID>13</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 13</channelName>
+                        <channelID>14</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 14</channelName>
+                        <channelID>15</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 15</channelName>
+                        <channelID>16</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 16</channelName>
+                        <channelID>17</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 17</channelName>
+                        <channelID>18</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 18</channelName>
+                        <channelID>19</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 19</channelName>
+                        <channelID>20</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 20</channelName>
+                        <channelID>21</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 21</channelName>
+                        <channelID>22</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 22</channelName>
+                        <channelID>23</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 23</channelName>
+                        <channelID>24</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 24</channelName>
+                        <channelID>25</channelID>
+                    </channel>
+                </channels>
+            </sensor>
+            <sensor>
+                <sensorName>Disk Free: /</sensorName>
+                <sensorID>50923</sensorID>
+                <channels>
+                    <channel>
+                        <channelName>Downtime</channelName>
+                        <channelID>-4</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Free Bytes</channelName>
+                        <channelID>1</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Total</channelName>
+                        <channelID>2</channelID>
+                    </channel>
+                </channels>
+            </sensor>
+            <sensor>
+                <sensorName>Disk Free: /dev/shm</sensorName>
+                <sensorID>50924</sensorID>
+                <channels>
+                    <channel>
+                        <channelName>Downtime</channelName>
+                        <channelID>-4</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Free Bytes</channelName>
+                        <channelID>1</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Total</channelName>
+                        <channelID>2</channelID>
+                    </channel>
+                </channels>
+            </sensor>
+        </sensors>
+    </device>
+    <device>
+        <deviceName>EAP-SIM WEB01</deviceName>
+        <deviceID>56364</deviceID>
+        <sensors>
+            <sensor>
+                <sensorName>Memory: Physical memory</sensorName>
+                <sensorID>56370</sensorID>
+                <channels>
+                    <channel>
+                        <channelName>Downtime</channelName>
+                        <channelID>-4</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Available Memory</channelName>
+                        <channelID>1</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Total Memory</channelName>
+                        <channelID>2</channelID>
+                    </channel>
+                </channels>
+            </sensor>
+            <sensor>
+                <sensorName>Memory: Swap space</sensorName>
+                <sensorID>56371</sensorID>
+                <channels>
+                    <channel>
+                        <channelName>Downtime</channelName>
+                        <channelID>-4</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Available Memory</channelName>
+                        <channelID>1</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Total Memory</channelName>
+                        <channelID>2</channelID>
+                    </channel>
+                </channels>
+            </sensor>
+            <sensor>
+                <sensorName>Disk Free: /home</sensorName>
+                <sensorID>56376</sensorID>
+                <channels>
+                    <channel>
+                        <channelName>Downtime</channelName>
+                        <channelID>-4</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Free Bytes</channelName>
+                        <channelID>1</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Total</channelName>
+                        <channelID>2</channelID>
+                    </channel>
+                </channels>
+            </sensor>
+            <sensor>
+                <sensorName>SNMP CPU Load</sensorName>
+                <sensorID>56377</sensorID>
+                <channels>
+                    <channel>
+                        <channelName>Downtime</channelName>
+                        <channelID>-4</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 1</channelName>
+                        <channelID>2</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 2</channelName>
+                        <channelID>3</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 3</channelName>
+                        <channelID>4</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 4</channelName>
+                        <channelID>5</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 5</channelName>
+                        <channelID>6</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 6</channelName>
+                        <channelID>7</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 7</channelName>
+                        <channelID>8</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 8</channelName>
+                        <channelID>9</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 9</channelName>
+                        <channelID>10</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 10</channelName>
+                        <channelID>11</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 11</channelName>
+                        <channelID>12</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 12</channelName>
+                        <channelID>13</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 13</channelName>
+                        <channelID>14</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 14</channelName>
+                        <channelID>15</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 15</channelName>
+                        <channelID>16</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 16</channelName>
+                        <channelID>17</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 17</channelName>
+                        <channelID>18</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 18</channelName>
+                        <channelID>19</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 19</channelName>
+                        <channelID>20</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 20</channelName>
+                        <channelID>21</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 21</channelName>
+                        <channelID>22</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 22</channelName>
+                        <channelID>23</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 23</channelName>
+                        <channelID>24</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 24</channelName>
+                        <channelID>25</channelID>
+                    </channel>
+                </channels>
+            </sensor>
+        </sensors>
+    </device>
+    <device>
+        <deviceName>EAP-SIM WEB02</deviceName>
+        <deviceID>56378</deviceID>
+        <sensors>
+            <sensor>
+                <sensorName>Memory: Physical memory</sensorName>
+                <sensorID>56383</sensorID>
+                <channels>
+                    <channel>
+                        <channelName>Downtime</channelName>
+                        <channelID>-4</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Available Memory</channelName>
+                        <channelID>1</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Total Memory</channelName>
+                        <channelID>2</channelID>
+                    </channel>
+                </channels>
+            </sensor>
+            <sensor>
+                <sensorName>Memory: Swap space</sensorName>
+                <sensorID>56384</sensorID>
+                <channels>
+                    <channel>
+                        <channelName>Downtime</channelName>
+                        <channelID>-4</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Available Memory</channelName>
+                        <channelID>1</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Total Memory</channelName>
+                        <channelID>2</channelID>
+                    </channel>
+                </channels>
+            </sensor>
+            <sensor>
+                <sensorName>Disk Free: /home</sensorName>
+                <sensorID>56389</sensorID>
+                <channels>
+                    <channel>
+                        <channelName>Downtime</channelName>
+                        <channelID>-4</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Free Bytes</channelName>
+                        <channelID>1</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Total</channelName>
+                        <channelID>2</channelID>
+                    </channel>
+                </channels>
+            </sensor>
+            <sensor>
+                <sensorName>SNMP CPU Load</sensorName>
+                <sensorID>56390</sensorID>
+                <channels>
+                    <channel>
+                        <channelName>Downtime</channelName>
+                        <channelID>-4</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 1</channelName>
+                        <channelID>2</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 2</channelName>
+                        <channelID>3</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 3</channelName>
+                        <channelID>4</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 4</channelName>
+                        <channelID>5</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 5</channelName>
+                        <channelID>6</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 6</channelName>
+                        <channelID>7</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 7</channelName>
+                        <channelID>8</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 8</channelName>
+                        <channelID>9</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 9</channelName>
+                        <channelID>10</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 10</channelName>
+                        <channelID>11</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 11</channelName>
+                        <channelID>12</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 12</channelName>
+                        <channelID>13</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 13</channelName>
+                        <channelID>14</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 14</channelName>
+                        <channelID>15</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 15</channelName>
+                        <channelID>16</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 16</channelName>
+                        <channelID>17</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 17</channelName>
+                        <channelID>18</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 18</channelName>
+                        <channelID>19</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 19</channelName>
+                        <channelID>20</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 20</channelName>
+                        <channelID>21</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 21</channelName>
+                        <channelID>22</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 22</channelName>
+                        <channelID>23</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 23</channelName>
+                        <channelID>24</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 24</channelName>
+                        <channelID>25</channelID>
+                    </channel>
+                </channels>
+            </sensor>
+        </sensors>
+    </device>
+    <device>
+        <deviceName>EAP-SIM-PROXY01</deviceName>
+        <deviceID>22707</deviceID>
+        <sensors>
+            <sensor>
+                <sensorName>SNMP CPU 負載</sensorName>
+                <sensorID>22709</sensorID>
+                <channels>
+                    <channel>
+                        <channelName>下線時間</channelName>
+                        <channelID>-4</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 1</channelName>
+                        <channelID>2</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 2</channelName>
+                        <channelID>3</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 3</channelName>
+                        <channelID>4</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 4</channelName>
+                        <channelID>5</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 5</channelName>
+                        <channelID>6</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 6</channelName>
+                        <channelID>7</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 7</channelName>
+                        <channelID>8</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 8</channelName>
+                        <channelID>9</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 9</channelName>
+                        <channelID>10</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 10</channelName>
+                        <channelID>11</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 11</channelName>
+                        <channelID>12</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 12</channelName>
+                        <channelID>13</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 13</channelName>
+                        <channelID>14</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 14</channelName>
+                        <channelID>15</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 15</channelName>
+                        <channelID>16</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 16</channelName>
+                        <channelID>17</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 17</channelName>
+                        <channelID>18</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 18</channelName>
+                        <channelID>19</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 19</channelName>
+                        <channelID>20</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 20</channelName>
+                        <channelID>21</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 21</channelName>
+                        <channelID>22</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 22</channelName>
+                        <channelID>23</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 23</channelName>
+                        <channelID>24</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 24</channelName>
+                        <channelID>25</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 25</channelName>
+                        <channelID>26</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 26</channelName>
+                        <channelID>27</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 27</channelName>
+                        <channelID>28</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 28</channelName>
+                        <channelID>29</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 29</channelName>
+                        <channelID>30</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 30</channelName>
+                        <channelID>31</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 31</channelName>
+                        <channelID>32</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 32</channelName>
+                        <channelID>33</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 33</channelName>
+                        <channelID>34</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 34</channelName>
+                        <channelID>35</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 35</channelName>
+                        <channelID>36</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 36</channelName>
+                        <channelID>37</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 37</channelName>
+                        <channelID>38</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 38</channelName>
+                        <channelID>39</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 39</channelName>
+                        <channelID>40</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 40</channelName>
+                        <channelID>41</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 41</channelName>
+                        <channelID>42</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 42</channelName>
+                        <channelID>43</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 43</channelName>
+                        <channelID>44</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 44</channelName>
+                        <channelID>45</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 45</channelName>
+                        <channelID>46</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 46</channelName>
+                        <channelID>47</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 47</channelName>
+                        <channelID>48</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 48</channelName>
+                        <channelID>49</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 49</channelName>
+                        <channelID>50</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 50</channelName>
+                        <channelID>51</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 51</channelName>
+                        <channelID>52</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 52</channelName>
+                        <channelID>53</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 53</channelName>
+                        <channelID>54</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 54</channelName>
+                        <channelID>55</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 55</channelName>
+                        <channelID>56</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 56</channelName>
+                        <channelID>57</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 57</channelName>
+                        <channelID>58</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 58</channelName>
+                        <channelID>59</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 59</channelName>
+                        <channelID>60</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 60</channelName>
+                        <channelID>61</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 61</channelName>
+                        <channelID>62</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 62</channelName>
+                        <channelID>63</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 63</channelName>
+                        <channelID>64</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 64</channelName>
+                        <channelID>65</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 65</channelName>
+                        <channelID>66</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 66</channelName>
+                        <channelID>67</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 67</channelName>
+                        <channelID>68</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 68</channelName>
+                        <channelID>69</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 69</channelName>
+                        <channelID>70</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 70</channelName>
+                        <channelID>71</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 71</channelName>
+                        <channelID>72</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 72</channelName>
+                        <channelID>73</channelID>
+                    </channel>
+                </channels>
+            </sensor>
+            <sensor>
+                <sensorName>Memory: Physical memory</sensorName>
+                <sensorID>22710</sensorID>
+                <channels>
+                    <channel>
+                        <channelName>下線時間</channelName>
+                        <channelID>-4</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>可用記憶體</channelName>
+                        <channelID>1</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>總記憶體</channelName>
+                        <channelID>2</channelID>
+                    </channel>
+                </channels>
+            </sensor>
+            <sensor>
+                <sensorName>Memory: Swap space</sensorName>
+                <sensorID>22711</sensorID>
+                <channels>
+                    <channel>
+                        <channelName>下線時間</channelName>
+                        <channelID>-4</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>可用記憶體</channelName>
+                        <channelID>1</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>總記憶體</channelName>
+                        <channelID>2</channelID>
+                    </channel>
+                </channels>
+            </sensor>
+            <sensor>
+                <sensorName>Disk Free: /home</sensorName>
+                <sensorID>61085</sensorID>
+                <channels>
+                    <channel>
+                        <channelName>Downtime</channelName>
+                        <channelID>-4</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Free Bytes</channelName>
+                        <channelID>1</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Total</channelName>
+                        <channelID>2</channelID>
+                    </channel>
+                </channels>
+            </sensor>
+        </sensors>
+    </device>
+    <device>
+        <deviceName>EAP-SIM-PROXY02</deviceName>
+        <deviceID>22722</deviceID>
+        <sensors>
+            <sensor>
+                <sensorName>SNMP CPU 負載</sensorName>
+                <sensorID>22724</sensorID>
+                <channels>
+                    <channel>
+                        <channelName>下線時間</channelName>
+                        <channelID>-4</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 1</channelName>
+                        <channelID>2</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 2</channelName>
+                        <channelID>3</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 3</channelName>
+                        <channelID>4</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 4</channelName>
+                        <channelID>5</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 5</channelName>
+                        <channelID>6</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 6</channelName>
+                        <channelID>7</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 7</channelName>
+                        <channelID>8</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 8</channelName>
+                        <channelID>9</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 9</channelName>
+                        <channelID>10</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 10</channelName>
+                        <channelID>11</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 11</channelName>
+                        <channelID>12</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 12</channelName>
+                        <channelID>13</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 13</channelName>
+                        <channelID>14</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 14</channelName>
+                        <channelID>15</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 15</channelName>
+                        <channelID>16</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 16</channelName>
+                        <channelID>17</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 17</channelName>
+                        <channelID>18</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 18</channelName>
+                        <channelID>19</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 19</channelName>
+                        <channelID>20</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 20</channelName>
+                        <channelID>21</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 21</channelName>
+                        <channelID>22</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 22</channelName>
+                        <channelID>23</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 23</channelName>
+                        <channelID>24</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 24</channelName>
+                        <channelID>25</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 25</channelName>
+                        <channelID>26</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 26</channelName>
+                        <channelID>27</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 27</channelName>
+                        <channelID>28</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 28</channelName>
+                        <channelID>29</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 29</channelName>
+                        <channelID>30</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 30</channelName>
+                        <channelID>31</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 31</channelName>
+                        <channelID>32</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 32</channelName>
+                        <channelID>33</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 33</channelName>
+                        <channelID>34</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 34</channelName>
+                        <channelID>35</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 35</channelName>
+                        <channelID>36</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 36</channelName>
+                        <channelID>37</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 37</channelName>
+                        <channelID>38</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 38</channelName>
+                        <channelID>39</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 39</channelName>
+                        <channelID>40</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 40</channelName>
+                        <channelID>41</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 41</channelName>
+                        <channelID>42</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 42</channelName>
+                        <channelID>43</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 43</channelName>
+                        <channelID>44</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 44</channelName>
+                        <channelID>45</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 45</channelName>
+                        <channelID>46</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 46</channelName>
+                        <channelID>47</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 47</channelName>
+                        <channelID>48</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 48</channelName>
+                        <channelID>49</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 49</channelName>
+                        <channelID>50</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 50</channelName>
+                        <channelID>51</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 51</channelName>
+                        <channelID>52</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 52</channelName>
+                        <channelID>53</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 53</channelName>
+                        <channelID>54</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 54</channelName>
+                        <channelID>55</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 55</channelName>
+                        <channelID>56</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 56</channelName>
+                        <channelID>57</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 57</channelName>
+                        <channelID>58</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 58</channelName>
+                        <channelID>59</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 59</channelName>
+                        <channelID>60</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 60</channelName>
+                        <channelID>61</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 61</channelName>
+                        <channelID>62</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 62</channelName>
+                        <channelID>63</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 63</channelName>
+                        <channelID>64</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 64</channelName>
+                        <channelID>65</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 65</channelName>
+                        <channelID>66</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 66</channelName>
+                        <channelID>67</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 67</channelName>
+                        <channelID>68</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 68</channelName>
+                        <channelID>69</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 69</channelName>
+                        <channelID>70</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 70</channelName>
+                        <channelID>71</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 71</channelName>
+                        <channelID>72</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>Processor 72</channelName>
+                        <channelID>73</channelID>
+                    </channel>
+                </channels>
+            </sensor>
+            <sensor>
+                <sensorName>Memory: Physical memory</sensorName>
+                <sensorID>22725</sensorID>
+                <channels>
+                    <channel>
+                        <channelName>下線時間</channelName>
+                        <channelID>-4</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>可用記憶體</channelName>
+                        <channelID>1</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>總記憶體</channelName>
+                        <channelID>2</channelID>
+                    </channel>
+                </channels>
+            </sensor>
+            <sensor>
+                <sensorName>Memory: Swap space</sensorName>
+                <sensorID>22726</sensorID>
+                <channels>
+                    <channel>
+                        <channelName>下線時間</channelName>
+                        <channelID>-4</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>可用記憶體</channelName>
+                        <channelID>1</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>總記憶體</channelName>
+                        <channelID>2</channelID>
+                    </channel>
+                </channels>
+            </sensor>
+            <sensor>
+                <sensorName>Disk Free: /</sensorName>
+                <sensorID>22728</sensorID>
+                <channels>
+                    <channel>
+                        <channelName>下線時間</channelName>
+                        <channelID>-4</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>可用位元組</channelName>
+                        <channelID>1</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>合計</channelName>
+                        <channelID>2</channelID>
+                    </channel>
+                </channels>
+            </sensor>
+            <sensor>
+                <sensorName>Disk Free: /dev/shm</sensorName>
+                <sensorID>22730</sensorID>
+                <channels>
+                    <channel>
+                        <channelName>下線時間</channelName>
+                        <channelID>-4</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>可用位元組</channelName>
+                        <channelID>1</channelID>
+                    </channel>
+                    <channel>
+                        <channelName>合計</channelName>
+                        <channelID>2</channelID>
+                    </channel>
+                </channels>
+            </sensor>
+        </sensors>
+    </device>
+</devices>

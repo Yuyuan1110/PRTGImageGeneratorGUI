@@ -22,9 +22,9 @@ li ul {
     display: none;
 }
 
-li.open ul {
+/* li.open ul {
     display: block;
-}
+} */
 
 li .toggle {
     cursor: pointer;
