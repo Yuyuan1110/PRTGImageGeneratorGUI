@@ -14,22 +14,21 @@ var urlParams = new URLSearchParams(window.location.search);
 var info = JSON.parse(sessionStorage.getItem('info'));
 var url = info.protocol + "://" + info.ip + ":" + info.port + "/api/table.json";
 
-var checkDevicesId = [];
-var checkSensorsId = [];
+var checkId = [];
 function treeFunction() {
     $(document).on('change', '.toggle', function () {
         switch ($(this).attr("name")) {
             case "devices":
                 var deviceId = $(this).attr('value');
                 if ($(this).prop("checked")) {
-                    if (checkDevicesId.includes(deviceId)) {
+                    if (checkId.includes(deviceId)) {
                         $(this).parent().children("ul").show("active");
                         // $(this).toggleClass("toggle-down");
                     } else {
                         $(this).parent().children("ul").show("active");
                         // $(this).toggleClass("toggle-down");
                         getItem("sensors", deviceId);
-                        checkDevicesId.push(deviceId);
+                        checkId.push(deviceId);
                     }
                     break;
                 } else {
@@ -40,14 +39,14 @@ function treeFunction() {
             case "sensors":
                 var sensorsId = $(this).attr("value");
                 if ($(this).prop("checked")) {
-                    if (checkSensorsId.includes(sensorsId)) {
+                    if (checkId.includes(sensorsId)) {
                         $(this).parent().children("ul").toggle("active");
                         // $(this).toggleClass("toggle-down");
                     } else {
                         $(this).parent().children("ul").toggle("active");
                         // $(this).toggleClass("toggle-down");
                         getItem("channels", sensorsId);
-                        checkSensorsId.push(sensorsId);
+                        checkId.push(sensorsId);
                     }
                     break;
                 } else {
@@ -149,20 +148,30 @@ function readXML() {
             var parser = new DOMParser();
             var xmlDoc = parser.parseFromString(xmlContent, "text/xml");
             var devices = xmlDoc.getElementsByTagName("device");
+
             for (var i = 0; i < devices.length; i++) {
                 var device = devices[i];
                 var deviceID = device.querySelector("deviceID").textContent;
-                NodeChecked(deviceID);
-
+                getItem("sensors", deviceID);
+                checkId.push(deviceID);
             }
 
             var sensors = xmlDoc.getElementsByTagName("sensor");
-            console.log(sensors);
             for (var j = 0; j < sensors.length; j++) {
-                var sensor = sensor[j];
+                var sensor = sensors[j];
                 var sensorID = sensor.querySelector("sensorID").textContent;
-                NodeChecked(sensorID);
+                var channels = sensor.querySelector("channel");
+                for (var i =0; i < channels.length; i++){
+
+                }
+                getItem("channels", sensorID);
+                checkId.push(sensorID);
             }
+
+
+            checkId.forEach(id =>{
+                NodeChecked(id);
+            })
         };
 
         reader.onerror = function (event) {
@@ -173,7 +182,9 @@ function readXML() {
     });
 }
 
-function NodeChecked(id){
-    $("input[value=" + id + "]").prop("checked",true);
+function NodeChecked(id) {
+    $("input[value=" + id + "]").prop("checked", true);
     $("input[value=" + id + "]").trigger("change");
 }
+
+
