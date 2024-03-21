@@ -7,6 +7,8 @@ $(function () {
         timeFormat: "HH-mm",
         dateFormat: "yy-mm-dd",
     });
+
+    exportXML();
     submitFunciton();
 });
 
@@ -14,21 +16,22 @@ var urlParams = new URLSearchParams(window.location.search);
 var info = JSON.parse(sessionStorage.getItem('info'));
 var url = info.protocol + "://" + info.ip + ":" + info.port + "/api/table.json";
 
-var checkId = [];
+var checkedDeviceId = [];
+var checkedSensorId = [];
 function treeFunction() {
     $(document).on('change', '.toggle', function () {
         switch ($(this).attr("name")) {
             case "devices":
                 var deviceId = $(this).attr('value');
                 if ($(this).prop("checked")) {
-                    if (checkId.includes(deviceId)) {
+                    if (checkedDeviceId.includes(deviceId)) {
                         $(this).parent().children("ul").show("active");
                         // $(this).toggleClass("toggle-down");
                     } else {
                         $(this).parent().children("ul").show("active");
                         // $(this).toggleClass("toggle-down");
                         getItem("sensors", deviceId);
-                        checkId.push(deviceId);
+                        checkedDeviceId.push(deviceId);
                     }
                     break;
                 } else {
@@ -39,14 +42,14 @@ function treeFunction() {
             case "sensors":
                 var sensorsId = $(this).attr("value");
                 if ($(this).prop("checked")) {
-                    if (checkId.includes(sensorsId)) {
+                    if (checkedSensorId.includes(sensorsId)) {
                         $(this).parent().children("ul").toggle("active");
                         // $(this).toggleClass("toggle-down");
                     } else {
                         $(this).parent().children("ul").toggle("active");
                         // $(this).toggleClass("toggle-down");
                         getItem("channels", sensorsId);
-                        checkId.push(sensorsId);
+                        checkedSensorId.push(sensorsId);
                     }
                     break;
                 } else {
@@ -57,33 +60,37 @@ function treeFunction() {
     });
 }
 
-function getItem(element, id) {
-    var RequestData = {
-        content: element,
-        columns: "objid,name",
-        id: id,
-        username: info.username,
-        password: info.password
-    };
-    $.ajax({
-        url: url,
-        type: "GET",
-        data: RequestData,
-        dataType: "json",
-        success: function (response) {
-            switch (element) {
-                case "devices":
-                    $("#devices").html(buildHtml(element, response.devices));
-                    break;
-                case "sensors":
-                    $("input[value=" + id + "]").parent().children("ul").html(buildHtml(element, response.sensors));
-                    break;
-                case "channels":
-                    $("input[value=" + id + "]").parent().children("ul").html(buildHtml(element, response.channels));
-                    break;
+async function getItem(element, id) {
+    getUrl = url + "?content=" + element + "&columns=objid,name&id=" + id + "&username=" + info.username + "&password=" + info.password;
+
+    try {
+        var response = await fetch(getUrl, {
+            method: 'GET',
+            headers: {
+                'Content-Type': 'application/json'
             }
+        });
+
+        if (!response.ok) {
+            throw new Error('Network response was not ok');
         }
-    });
+
+        const data = await response.json();
+        switch (element) {
+            case "devices":
+                $("#devices").html(buildHtml(element, data.devices));
+                break;
+            case "sensors":
+                $("input[value=" + id + "]").parent().children("ul").html(buildHtml(element, data.sensors));
+                break;
+            case "channels":
+                $("input[value=" + id + "]").parent().children("ul").html(buildHtml(element, data.channels));
+                return data.channels;
+        }
+    } catch (error) {
+        console.error('Error:', error);
+        throw error;
+    }
 }
 
 function buildHtml(element, items) {
@@ -97,7 +104,7 @@ function buildHtml(element, items) {
                 html += '<li><input class="toggle sensors" type="checkbox" name="sensors" value="' + item.objid + '"><label>' + item.name + '</label></input><ul><li>沒資訊就等一下再重勾一次</li></ul></li>';
                 break;
             case "channels":
-                html += '<li><input class="channels" type="checkbox" name="channels" value="' + item.objid + '">' + item.name + '</input></li>';
+                html += '<li><input class="channels" type="checkbox" name="channels" value="' + item.objid + '"><label>' + item.name + '</label></input></li>';
                 break;
         }
     })
@@ -143,7 +150,7 @@ function readXML() {
         $("#inputFile").text(file.name);
         console.log(file.name);
         const reader = new FileReader();
-        reader.onload = function (event) {
+        reader.onload = async function (event) {
             const xmlContent = event.target.result;
             var parser = new DOMParser();
             var xmlDoc = parser.parseFromString(xmlContent, "text/xml");
@@ -153,25 +160,35 @@ function readXML() {
                 var device = devices[i];
                 var deviceID = device.querySelector("deviceID").textContent;
                 getItem("sensors", deviceID);
-                checkId.push(deviceID);
+                checkedDeviceId.push(deviceID);
+                NodeChecked(deviceID);
             }
 
             var sensors = xmlDoc.getElementsByTagName("sensor");
             for (var j = 0; j < sensors.length; j++) {
                 var sensor = sensors[j];
                 var sensorID = sensor.querySelector("sensorID").textContent;
-                var channels = sensor.querySelector("channel");
-                for (var i =0; i < channels.length; i++){
+                console.log(sensorID);
+                var allChannelsOfSensor = await getItem("channels", sensorID);
+                checkedSensorId.push(sensorID);
+                NodeChecked(sensorID);
+                var channels = sensor.querySelectorAll("channel");
+                var allChannelsID = allChannelsOfSensor.map(function (obj) {
+                    return obj.objid;
+                })
 
-                }
-                getItem("channels", sensorID);
-                checkId.push(sensorID);
+                channels.forEach(channel => {
+                    channelID = channel.querySelector("channelID").textContent;
+                    index = allChannelsID.indexOf(parseInt(channelID));
+                    if (index !== -1) {
+                        allChannelsID.splice(index, 1);
+                    }
+                })
+
+                allChannelsID.forEach(id => {
+                    $("input[value=" + id + "]").prop("checked", true);
+                })
             }
-
-
-            checkId.forEach(id =>{
-                NodeChecked(id);
-            })
         };
 
         reader.onerror = function (event) {
@@ -187,4 +204,65 @@ function NodeChecked(id) {
     $("input[value=" + id + "]").trigger("change");
 }
 
+function exportXML() {
+    $(document).on("click", "#fileOutput", event => {
 
+        var xmlDoc = document.implementation.createDocument(null, "devices");
+        var root = xmlDoc.documentElement;
+
+        $(".devices:checked").each(function () {
+            var device = xmlDoc.createElement("device");
+            var deviceName = xmlDoc.createElement("deviceName");
+            deviceName.textContent = $(this).siblings("label").text();
+            var deviceID = xmlDoc.createElement("deviceID");
+            deviceID.textContent = $(this).val();
+            device.appendChild(deviceName);
+            device.appendChild(deviceID);
+            sensors = xmlDoc.createElement("sensors");
+            $(this).siblings().find('input.sensors:checked').each(function () {
+                var sensor = xmlDoc.createElement("sensor");
+                var sensorName = xmlDoc.createElement("sensorName");
+                sensorName.textContent = $(this).siblings("label").text();
+                var sensorID = xmlDoc.createElement("sensorID");
+                sensorID.textContent = $(this).val();
+                sensor.appendChild(sensorName);
+                sensor.appendChild(sensorID);
+                channels = xmlDoc.createElement("channels");
+                $(this).siblings('ul').find('input.channels:not(:checked)').each(function () {
+                    var channel = xmlDoc.createElement("channel");
+                    var channelName = xmlDoc.createElement("channelName");
+                    channelName.textContent = $(this).siblings("label").text();
+                    var channelID = xmlDoc.createElement("channelID");
+                    channelID.textContent = $(this).val();
+                    channel.appendChild(channelName);
+                    channel.appendChild(channelID);
+                    channels.appendChild(channel);
+                });
+                sensor.appendChild(channels);
+                sensors.appendChild(sensor);
+            })
+            device.appendChild(sensors);
+            root.appendChild(device);
+        })
+        var xmlDeclaration = xmlDoc.createProcessingInstruction("xml", 'version="1.0" encoding="UTF-8" standalone="no"');
+        xmlDoc.insertBefore(xmlDeclaration, xmlDoc.firstChild);
+        var xmlString = new XMLSerializer().serializeToString(xmlDoc);
+
+        var blob = new Blob([xmlString], { type: 'text/xml' });
+
+        // 创建一个链接
+        var url = URL.createObjectURL(blob);
+
+        // 创建一个 <a> 元素
+        var a = document.createElement('a');
+        a.href = url;
+        a.download = 'settings.xml'; // 下载文件的名称
+
+        // 模拟点击下载链接
+        document.body.appendChild(a);
+        a.click();
+
+        // 清除临时 URL 对象
+        window.URL.revokeObjectURL(url);
+    });
+}

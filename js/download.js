@@ -42,14 +42,13 @@ async function savePng(directoryHandle, url) {
 
 
 $(document).on("click", "#chooseDir-btn", async () => {
-    const directoryHandle = await requestFileSystemAccess();
-    if (directoryHandle) {
+    // const directoryHandle = await requestFileSystemAccess();
+    // if (directoryHandle) {
         var urls = JSON.parse(sessionStorage.getItem("urls"));
-        urls.map(async (url) => {
+        convertSVGs(urls);
             // svgToImage(url);
-            await savePng(directoryHandle, url);
-        })
-    }
+            // await savePng(directoryHandle, url);
+    // }
 })
 
 
@@ -89,6 +88,60 @@ async function svgUrlGenerator() {
     return urls;
 }
 
+
+async function convertSVGs(urls) {
+    var jpgFiles = []; // 儲存所有轉换後的 JPG 文件
+    var promises = [];
+    urls.map(svgData => {
+        
+        var jpgName = Object.keys(svgData);
+        var img = new Image();
+        
+        var promise = new Promise((resolve, reject) => {
+            img.onload = function(){
+                var canvas = document.createElement('canvas');
+                canvas.width = 975;
+                canvas.height = 300;
+                var context = canvas.getContext('2d');
+                context.drawImage(img, 0, 0, 975, 300);
+                canvas.toBlob(blob => {
+                    jpgFiles.push({ blob, name: jpgName + '.jpg' });
+                    resolve();
+                }, 'image/jpeg');
+            };
+            img.src = 'data:image/svg+xml;base64,' + btoa(unescape(encodeURIComponent(svgData[jpgName]))); // 设置图片的 src
+        });
+        promises.push(promise); // 将每个图片加载操作的 Promise 存入数组
+    });
+    Promise.all(promises).then(() => {
+    saveFilesToFolder(jpgFiles);
+    });
+}
+async function saveFilesToFolder(jpgFiles) {
+    try {
+      // 請求用户選擇文件夾
+      const folderHandle = await window.showDirectoryPicker();
+      
+      // 保存所有 JPG 文件到用户選擇的文件夾中
+      for (const jpgFile of jpgFiles) {
+        const fileHandle = await folderHandle.getFileHandle(jpgFile.name, { create: true });
+        await writeFile(fileHandle, jpgFile.blob);
+      }
+      
+      alert('Files saved successfully!');
+    } catch (err) {
+      console.error('Error saving files:', err);
+      alert('Error saving files: ' + err.message);
+    }
+  }
+  
+  // 寫入文件
+  async function writeFile(fileHandle, blob) {
+    const writable = await fileHandle.createWritable();
+    await writable.write(blob);
+    await writable.close();
+  }
+  
 
 // function svgToImage(svgData) {
 //     var pngName = Object.keys(url);
