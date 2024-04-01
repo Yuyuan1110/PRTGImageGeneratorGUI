@@ -201,7 +201,7 @@ function checkUsername() {
 
 function checkPassword() {
     var password = $("#password").val();
-    var reg_password = /^\w{4,20}$/;
+    var reg_password = /^\S{4,20}$/;
     var flag = reg_password.test(password);
     if (flag) {
         // valid
