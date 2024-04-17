@@ -131,7 +131,7 @@ function submitFunciton() {
             });
             devices[$(this).val()]["sensors"] = sensors;
         });
-        sessionStorage.setItem("devices", JSON.stringify(devices));
+        localStorage.setItem("devices", JSON.stringify(devices));
         time = { "startTime": $("#start").val(), "endTime": $("#end").val(), "interval": $("#avg").val() };
         sessionStorage.setItem("time", JSON.stringify(time));
         location.href = "download.html";

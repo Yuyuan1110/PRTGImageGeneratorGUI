@@ -1,5 +1,6 @@
 $(document).ready(function () {
     sessionStorage.clear();
+    localStorage.clear();
     $("#header").load("header.html");
     document.getElementById("ip").focus();
     $(".spinner-border").css("display", "none");

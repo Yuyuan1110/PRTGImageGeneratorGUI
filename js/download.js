@@ -1,11 +1,11 @@
 $(function () {
     $("#header").load("header.html");
-
+    generator();
 })
 
 var info = JSON.parse(sessionStorage.getItem('info'));
 var url = info.protocol + "://" + info.ip + ":" + info.port + "/chart.svg?graphid=-1";
-var devices = JSON.parse(sessionStorage.getItem("devices"));
+var devices = JSON.parse(localStorage.getItem("devices"));
 var time = JSON.parse(sessionStorage.getItem("time"));
 const sdate = time.startTime.replace(/\s/g, "-").replace(/(:|$)/g, "-00");
 const edate = time.endTime.replace(/\s/g, "-").replace(/(:|$)/g, "-00");
@@ -44,23 +44,25 @@ async function savePng(directoryHandle, url) {
 $(document).on("click", "#chooseDir-btn", async () => {
     // const directoryHandle = await requestFileSystemAccess();
     // if (directoryHandle) {
-        var urls = JSON.parse(sessionStorage.getItem("urls"));
-        convertSVGs(urls);
+        // var urls = JSON.parse(localStorage.getItem("urls"));
+        
+        convertSVGs(downloadUrls);
+    
+        
             // svgToImage(url);
             // await savePng(directoryHandle, url);
     // }
 })
 
+var downloadUrls = []
+async function generator(){
+    downloadUrls = await svgUrlGenerator();
+}
 
-$(document).on("click", "#API-btn", async () => {
-    $("#API-btn").prop("disabled", true);
-    var urls = await svgUrlGenerator();
-    sessionStorage.setItem("urls", JSON.stringify(urls));
-    $("#API-btn").prop("disabled", false);
-})
-
+var textarea = $('#logTextarea');
 async function svgUrlGenerator() {
     var urls = [];
+    var logContent = 'Generating image, please wait....\n';
     for (let deviceId of Object.keys(devices)) {
         const device = devices[deviceId];
         const deviceName = device.deviceName;
@@ -69,7 +71,7 @@ async function svgUrlGenerator() {
             const sensor = device.sensors[sensorId];
             const hide = sensor.channels;
             const u = url + "&id=" + sensorId + "&sdate=" + sdate + "&edate=" + edate + "&avg=" + avg + "&graphstyling=baseFontSize%3D%2710%27%20showLegend%3D%271%27&width=975&height=300&bgcolor=%23FCFCFC&hide=" + hide + "&username=" + info.username + "&password=" + info.password;
-            var fileName = deviceName + sensor.sensorName;
+            var fileName = deviceName +" - "+ sensor.sensorName;
             fileName = fileName.replace(/[\\/:*?"<>|]/g, '');
             fileName = fileName.trim().replace(/^\.+|\.+$/g, '')
             if (fileName.length > 255) {
@@ -79,12 +81,21 @@ async function svgUrlGenerator() {
             try {
                 const response = await fetch(u);
                 const svgElement = await response.text();
+                logContent += "Generated image: " + fileName +".jpg \n";
                 urls.push({ [fileName]: svgElement });
             } catch (error) {
                 console.error('Failed to fetch SVG:', error);
             }
+            $("#logTextarea").val(logContent);
+            
+            textarea.scrollTop(textarea[0].scrollHeight);
         }
-    }
+    } 
+    logContent += "All images have been generated!!!\n";
+    logContent += "Please press Download button!!"
+    $("#logTextarea").val(logContent);
+    textarea.scrollTop(textarea[0].scrollHeight);
+    $("#chooseDir-btn").prop("disabled", false);
     return urls;
 }
 
