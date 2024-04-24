@@ -148,7 +148,7 @@ function readXML() {
         }
 
         $("#inputFile").text(file.name);
-        console.log(file.name);
+        // console.log(file.name);
         const reader = new FileReader();
         reader.onload = async function (event) {
             const xmlContent = event.target.result;
@@ -168,15 +168,13 @@ function readXML() {
             for (var j = 0; j < sensors.length; j++) {
                 var sensor = sensors[j];
                 var sensorID = sensor.querySelector("sensorID").textContent;
-                console.log(sensorID);
                 var allChannelsOfSensor = await getItem("channels", sensorID);
                 checkedSensorId.push(sensorID);
-                NodeChecked(sensorID);
+                var sensorNode = NodeChecked(sensorID);
                 var channels = sensor.querySelectorAll("channel");
                 var allChannelsID = allChannelsOfSensor.map(function (obj) {
                     return obj.objid;
                 })
-
                 channels.forEach(channel => {
                     channelID = channel.querySelector("channelID").textContent;
                     index = allChannelsID.indexOf(parseInt(channelID));
@@ -186,7 +184,12 @@ function readXML() {
                 })
 
                 allChannelsID.forEach(id => {
-                    $("input[value=" + id + "]").prop("checked", true);
+                    // $("input[value=" + id + "]").prop("checked", true);
+                    // sensorNode.querySelector('input[value="' + id + '"]').checked = true;
+                    var checkbox = sensorNode.querySelector('input[value="' + id + '"]');
+                    if (checkbox) {
+                        checkbox.checked = true;
+                    }
                 })
             }
         };
@@ -202,6 +205,7 @@ function readXML() {
 function NodeChecked(id) {
     $("input[value=" + id + "]").prop("checked", true);
     $("input[value=" + id + "]").trigger("change");
+    return document.querySelector('input[value="' + id + '"]').parentElement;
 }
 
 function exportXML() {
