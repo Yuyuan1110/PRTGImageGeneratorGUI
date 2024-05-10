@@ -101,6 +101,8 @@ async function svgUrlGenerator() {
 
 
 async function convertSVGs(urls) {
+    $("#chooseDir-btn").prop("disabled", true);
+    $("#chooseDir-btn").text("waiting");
     var jpgFiles = []; // 儲存所有轉换後的 JPG 文件
     var promises = [];
     urls.map(svgData => {
@@ -144,6 +146,8 @@ async function saveFilesToFolder(jpgFiles) {
       console.error('Error saving files:', err);
       alert('Error saving files: ' + err.message);
     }
+    $("#chooseDir-btn").prop("disabled", false);
+    $("#chooseDir-btn").text("Download");
   }
   
   // 寫入文件
